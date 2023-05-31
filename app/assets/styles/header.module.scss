@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    color: #FFF;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px;
+
+    &_list {
+        display: flex;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    &_item {
+        margin: 0 30px;
+    }
+    &_buttons-container {
+        display: flex;
+        margin-right: 20px;
+        button {
+            background-color: #FFF;
+        }
+        button:hover {
+            border: 2px solid #FFF;
+            background-color: transparent;
+            color: #FFF;
+        }
+    }
+    &_select-lang {
+        display: flex;
+        align-items: center;
+        img {
+            margin: 0 5px 0 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
