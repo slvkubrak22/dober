@@ -1,6 +1,8 @@
+@import "variables";
+
 .header {
     display: flex;
-    color: #FFF;
+    color: $main-color-text1;
     align-items: center;
     justify-content: space-between;
     padding: 34px;
@@ -8,7 +10,7 @@
     &_list {
         display: flex;
         font-weight: 300;
-        font-size: 20px;
+        font-size: $medium-text;
     }
     &_item {
         margin: 0 30px;
@@ -22,7 +24,7 @@
         button:hover {
             border: 2px solid #FFF;
             background-color: transparent;
-            color: #FFF;
+            color: $main-color-text1;
         }
     }
     &_select-lang {

@@ -219,6 +219,7 @@
     font-style: normal;
 }
 
+
 body {
     margin: 0 auto;
     font-family: 'Gilroy', sans-serif;
@@ -251,4 +252,10 @@ a {
 
 .logo {
     cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
 }
