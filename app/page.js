@@ -3,10 +3,15 @@
 // import mobile2 from "./assets/img/mobile_2.png";
 // import styles from "./assets/styles/main-page.module.scss";
 
-import FirstSection from "./components/MainPageFirstsection";
+import FirstSection from "./components/MainPageFirstSection";
+import Possibilities from "./components/Possibilities";
+
 
 export default function Home() {
   return (
-    <FirstSection />
+    <>
+      <FirstSection />
+      <Possibilities />
+    </>
   );
 }

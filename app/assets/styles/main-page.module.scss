@@ -35,18 +35,23 @@
         max-width: fit-content;
         max-width: 400px;
     }
-    
 }
 
 .bg_color {
     background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
 }
 
-// .button {
-//     background-color: $main-color-text1;
-// }
-// .button:hover {
-//     border: 2px solid $main-color-text1;
-//     background-color: transparent;
-//     color: $main-color-text1;
-// }
+.border {
+    border: 1px solid $main-color-text2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}   
+
+.border.span-two {
+    grid-row: span 2;
+}
