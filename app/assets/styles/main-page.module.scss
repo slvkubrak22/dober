@@ -1,0 +1,52 @@
+@import 'variables';
+
+.first-section {
+    display: flex;
+
+    &_subitem {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    &_description {
+        display: flex;
+        flex-direction: column;
+        max-width: 304px; 
+        margin: 0 15px;
+    }
+
+    &_text-color {
+        color: $main-color-text1;
+    }
+
+    &_text-end {
+        text-align: end;
+    }
+    
+    &_pos-end {
+        align-self: end;
+    }
+    &_pos-start {
+        align-self: start;
+    }
+
+    &_img-container {
+        max-width: fit-content;
+        max-width: 400px;
+    }
+    
+}
+
+.bg_color {
+    background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
+}
+
+// .button {
+//     background-color: $main-color-text1;
+// }
+// .button:hover {
+//     border: 2px solid $main-color-text1;
+//     background-color: transparent;
+//     color: $main-color-text1;
+// }

@@ -1,6 +1,7 @@
 import Footer from './components/Footer';
 import Header from './components/Header';
-import './globals.css';
+// import './globals.css';
+import './global.scss';
 
 export const metadata = {
   title: 'Dober',

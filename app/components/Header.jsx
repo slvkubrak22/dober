@@ -8,9 +8,9 @@ import style from '../assets/styles/header.module.scss';
 
 export default function Header() {
     return(
-        <header style={{background: "linear-gradient(90deg, #742AA7 0%, #0D3E93 100%)"}}>
+        <header className="container">
             <div className={style["header"] + ' ' + style["container"]}>
-                <Image className="logo" src={logo} />
+                <Image className="logo" src={logo} alt="main Dober logo" />
                 <ul className={style["header_list"]}>
                     <li ><Link href='/' className={style["header_item"]}>Продукт</Link></li>
                     <li><Link href='/' className={style["header_item"]}>Для компаний</Link></li>
@@ -21,9 +21,9 @@ export default function Header() {
                         <button style={{margin: '0 10px'}}>Donate</button>
                         <button>Download</button>
                     </div>
-                    <Image className="logo" src={twitter_logo}/>
+                    <Image className="logo" src={twitter_logo} alt="twitter logo"/>
                     <div className={style["header_select-lang"]}>
-                        <Image src={globe}/>
+                        <Image src={globe} alt="change language icon"/>
                         EN
                     </div>
                 </div>
