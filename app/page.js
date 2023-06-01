@@ -5,6 +5,7 @@
 
 import FirstSection from "./components/MainPageFirstSection";
 import Possibilities from "./components/Possibilities";
+import Security from "./components/Security";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <FirstSection />
       <Possibilities />
+      <Security />
     </>
   );
 }

@@ -84,3 +84,15 @@
         transition: all 0.3s;
     }
 }
+
+.security {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+
+    &_button {
+        color: $main-color-text1;
+        background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
+
+    }
+}
