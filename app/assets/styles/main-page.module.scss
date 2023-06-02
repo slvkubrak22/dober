@@ -100,14 +100,12 @@
 .advantages {
     display: grid;
     grid-template-columns: 500px repeat(4, 1fr);
+    column-gap: 20px;
 
     &_item {
         padding: 28px;
         text-align: start;
         border-top: 1px solid #31313126;
-        border-bottom: 1px solid #31313126;
-        box-shadow: 0px 4px 40px 0px rgba(4, 2, 42, 0.05);
-
 
         &_text {
             font-size: 22px;
@@ -121,6 +119,12 @@
         border-radius: 20px 20px 0 0;
         padding-top: 28px;
     }
+    &_border-bottom {
+        border-radius: 0 0 20px 20px;
+    }
+    // &_shadow {
+    //     box-shadow: 1px 0 6px rgba(0, 0, 0, 0.5);
+    // }
 }
 
 .justify {

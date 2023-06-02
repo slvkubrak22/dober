@@ -18,23 +18,23 @@ function AdvantagesRow({
 }) {
   return (
     <>
-      <div className={styles["advantages_item"]}>
-        <p className={styles["advantages_item_text"]}>
-            {description}
-        </p>
-      </div>
-      <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_bg-col"]}>
-        <Image src={doberItem} alt="Dober Item"/>
-      </div>
-      <div className={styles["advantages_item"] + ' ' + styles["justify"]}>
-        <Image src={signalItem} alt="Ignal Item"/>
-      </div>
-      <div className={styles["advantages_item"] + ' ' + styles["justify"]}>
-        <Image src={telegramItem} alt="Telegram Item"/>
-      </div>
-      <div className={styles["advantages_item"] + ' ' + styles["justify"]}>
-        <Image src={whatsappItem} alt="Whatsapp Item"/>
-      </div>
+        <div className={styles["advantages_item"]}>
+            <p className={styles["advantages_item_text"]}>
+                {description}
+            </p>
+        </div>
+        <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_bg-col"] + ' ' + styles["advantages_shadow"]}>
+            <Image src={doberItem} alt="Dober Item"/>
+        </div>
+        <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"]}>
+            <Image src={signalItem} alt="Ignal Item"/>
+        </div>
+        <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"]}>
+            <Image src={telegramItem} alt="Telegram Item"/>
+        </div>
+        <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"]}>
+            <Image src={whatsappItem} alt="Whatsapp Item"/>
+        </div>
     </>
   );
 }
@@ -143,41 +143,63 @@ const advantagesData = [
 export default function Advantages() {
   return (
     <section style={{marginTop: 100}} className="container">
-      {/* <h2>Наші переваги</h2> */}
-      <div className={styles["advantages"]}>
-        <div>
-          <h2 style={{marginTop: 0}}>Наші переваги</h2>
+        <div className={styles["advantages"]}>
+            <div>
+            <h2 style={{marginTop: 0}}>Наші переваги</h2>
+            </div>
+            <div className={styles["justify"] + ' ' + styles["advantages_bg-col"] + ' ' + styles["advantages_border-top"] + ' ' + styles["advantages_shadow"]}>
+                <Image src={doberLogo}/>
+                <p className={styles["advantages_item_text"]}>Dober</p>
+            </div>
+            <div className={styles["justify"] + ' ' + styles["advantages_border-top"] + ' ' + styles["advantages_shadow"]}>
+                <Image src={signalLogo}/>
+                <p className={styles["advantages_item_text"]}>Signal</p>
+            </div>
+            <div className={styles["justify"] + ' ' + styles["advantages_border-top"] + ' ' + styles["advantages_shadow"]}>
+                <Image src={telegramLogo}/>
+                <p className={styles["advantages_item_text"]}>Telegram</p>
+            </div>
+            <div className={styles["justify"] + ' ' + styles["advantages_border-top"] + ' ' + styles["advantages_shadow"]}>
+                <Image src={whatsAppLogo}/>
+                <p className={styles["advantages_item_text"]}>WhatsApp</p>
+            </div>
+            {advantagesData.map((item, key) => 
+            <AdvantagesRow
+                key={key}
+                description={item.description}
+                doberItem={item.doberItem}
+                signalItem={item.signalItem}
+                telegramItem={item.telegramItem}
+                whatsappItem={item.whatsappItem}
+            />
+            )}
+            <div className={styles["advantages_item"]}>
+                <p className={styles["advantages_item_text"]}>
+                    Головна причина чому застосунок не рекомендовано
+                </p>
+                <p className={styles["advantages_item_text"]}>
+                    securemessagingapps.com - источник
+                </p>
+            </div>
+            <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_bg-col"] + ' ' + styles["advantages_shadow"] + ' ' + styles["advantages_border-bottom"] }>
+            </div>
+            <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"] + ' ' + styles["advantages_border-bottom"] }>
+                <p className={styles["advantages_item_text"]} style={{textAlign: 'center', fontSize: 13, fontWeight: 400}}>
+                    Порада скасувати обов’язкову вимогу для користувачів реєструватися за допомогою мобільного номера
+                </p>
+            </div>
+            <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"] + ' ' + styles["advantages_border-bottom"] }>
+                <p className={styles["advantages_item_text"]} style={{textAlign: 'center', fontSize: 16, fontWeight: 400}}>
+                    Криптографія не за замовчуванням
+                </p>
+            </div>
+            <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"] + ' ' + styles["advantages_border-bottom"] }>
+                <p className={styles["advantages_item_text"]} style={{textAlign: 'center', fontSize: 16, fontWeight: 400}}>
+                    Названий партнером АНБ у викриттях Сноудена 
+                </p>
+            </div>
         </div>
-        <div className={styles["justify"] + ' ' + styles["advantages_bg-col"] + ' ' + styles["advantages_border-top"]}>
-            <Image src={doberLogo}/>
-            <p className={styles["advantages_item_text"]}>Dober</p>
-        </div>
-        <div className={styles["justify"] + ' ' + styles["advantages_border-top"]}>
-            <Image src={signalLogo}/>
-            <p className={styles["advantages_item_text"]}>Signal</p>
-        </div>
-        <div className={styles["justify"] + ' ' + styles["advantages_border-top"]}>
-            <Image src={telegramLogo}/>
-            <p className={styles["advantages_item_text"]}>Telegram</p>
-        </div>
-        <div className={styles["justify"] + ' ' + styles["advantages_border-top"]}>
-            <Image src={whatsAppLogo}/>
-            <p className={styles["advantages_item_text"]}>WhatsApp</p>
-        </div>
-      </div>
-      <div className={styles["advantages"]}>
-        {advantagesData.map((item, key) => 
-          <AdvantagesRow
-            key={key}
-            description={item.description}
-            doberItem={item.doberItem}
-            signalItem={item.signalItem}
-            telegramItem={item.telegramItem}
-            whatsappItem={item.whatsappItem}
-          />
-        )}
-        
-      </div>
+
     </section>
   );
 }
