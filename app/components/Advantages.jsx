@@ -3,7 +3,11 @@ import Image from "next/image";
 import styles from "../assets/styles/main-page.module.scss";
 
 import checkmark from "../assets/img/checkmark.png";
-import cross from "../assets/img/cross.png"
+import cross from "../assets/img/cross.png";
+import doberLogo from "../assets/img/dober-logo.png";
+import signalLogo from "../assets/img/signal-logo.png";
+import telegramLogo from "../assets/img/telegram-logo.png";
+import whatsAppLogo from "../assets/img/whatsApp-logo.png";
 
 function AdvantagesRow({
   description,
@@ -146,10 +150,22 @@ export default function Advantages() {
         <div>
           <h2>Наші переваги</h2>
         </div>
-        <div>Dober</div>
-        <div>Signal</div>
-        <div>Telegram</div>
-        <div>WhatsApp</div>
+        <div>
+            <Image src={doberLogo}/>
+            <p>Dober</p>
+        </div>
+        <div>
+            <Image src={signalLogo}/>
+            <p>Signal</p>
+        </div>
+        <div>
+            <Image src={telegramLogo}/>
+            <p>Telegram</p>
+        </div>
+        <div>
+            <Image src={whatsAppLogo}/>
+            <p>WhatsApp</p>
+        </div>
       </div>
       <div
         style={{ display: "grid", gridTemplateColumns: "2fr repeat(4, 1fr)" }}
