@@ -148,19 +148,19 @@ export default function Advantages() {
             <h2 style={{marginTop: 0}}>Наші переваги</h2>
             </div>
             <div className={styles["justify"] + ' ' + styles["advantages_bg-col"] + ' ' + styles["advantages_border-top"] + ' ' + styles["advantages_shadow"]}>
-                <Image src={doberLogo}/>
+                <Image src={doberLogo} alt="dober logo"/>
                 <p className={styles["advantages_item_text"]}>Dober</p>
             </div>
             <div className={styles["justify"] + ' ' + styles["advantages_border-top"] + ' ' + styles["advantages_shadow"]}>
-                <Image src={signalLogo}/>
+                <Image src={signalLogo} alt="signal logo"/>
                 <p className={styles["advantages_item_text"]}>Signal</p>
             </div>
             <div className={styles["justify"] + ' ' + styles["advantages_border-top"] + ' ' + styles["advantages_shadow"]}>
-                <Image src={telegramLogo}/>
+                <Image src={telegramLogo} alt="telegram logo"/>
                 <p className={styles["advantages_item_text"]}>Telegram</p>
             </div>
             <div className={styles["justify"] + ' ' + styles["advantages_border-top"] + ' ' + styles["advantages_shadow"]}>
-                <Image src={whatsAppLogo}/>
+                <Image src={whatsAppLogo} alt="whatsApp logo"/>
                 <p className={styles["advantages_item_text"]}>WhatsApp</p>
             </div>
             {advantagesData.map((item, key) => 

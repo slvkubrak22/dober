@@ -1,5 +1,28 @@
 @import 'variables';
 
+.dober-container {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+
+    &_justify {
+        justify-content: space-between;
+    }
+
+    &_p {
+        margin: 20px 0;
+        font-size: 26px;
+        color: $main-color-text1;
+    }
+
+    &_item {
+        margin: 0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .bg_color {
     background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
 }
@@ -10,4 +33,6 @@
 
 .h2 {
     max-width: 754px;
+    color: $main-color-text1;
+    // margin-top: 0;
 }
