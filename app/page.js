@@ -3,6 +3,7 @@
 // import mobile2 from "./assets/img/mobile_2.png";
 // import styles from "./assets/styles/main-page.module.scss";
 
+import Advantages from "./components/Advantages";
 import FirstSection from "./components/FirstSection";
 import Possibilities from "./components/Possibilities";
 import Security from "./components/Security";
@@ -14,6 +15,7 @@ export default function Home() {
       <FirstSection />
       <Possibilities />
       <Security />
+      <Advantages />
     </>
   );
 }
