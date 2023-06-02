@@ -18,21 +18,21 @@ function AdvantagesRow({
 }) {
   return (
     <>
-      <div className={styles["advantages-item"]}>
-        <p className={styles["advantages-item_text"]}>
+      <div className={styles["advantages_item"]}>
+        <p className={styles["advantages_item_text"]}>
             {description}
         </p>
       </div>
-      <div className={styles["advantages-item"] + ' ' + styles["just"]}>
+      <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_bg-col"]}>
         <Image src={doberItem} alt="Dober Item"/>
       </div>
-      <div className={styles["advantages-item"] + ' ' + styles["just"]}>
+      <div className={styles["advantages_item"] + ' ' + styles["justify"]}>
         <Image src={signalItem} alt="Ignal Item"/>
       </div>
-      <div className={styles["advantages-item"] + ' ' + styles["just"]}>
+      <div className={styles["advantages_item"] + ' ' + styles["justify"]}>
         <Image src={telegramItem} alt="Telegram Item"/>
       </div>
-      <div className={styles["advantages-item"] + ' ' + styles["just"]}>
+      <div className={styles["advantages_item"] + ' ' + styles["justify"]}>
         <Image src={whatsappItem} alt="Whatsapp Item"/>
       </div>
     </>
@@ -142,34 +142,30 @@ const advantagesData = [
 
 export default function Advantages() {
   return (
-    <section className="container">
+    <section style={{marginTop: 100}} className="container">
       {/* <h2>Наші переваги</h2> */}
-      <div
-        style={{ display: "grid", gridTemplateColumns: "2fr repeat(4, 1fr)" }}
-      >
+      <div className={styles["advantages"]}>
         <div>
-          <h2>Наші переваги</h2>
+          <h2 style={{marginTop: 0}}>Наші переваги</h2>
         </div>
-        <div>
+        <div className={styles["justify"] + ' ' + styles["advantages_bg-col"] + ' ' + styles["advantages_border-top"]}>
             <Image src={doberLogo}/>
-            <p>Dober</p>
+            <p className={styles["advantages_item_text"]}>Dober</p>
         </div>
-        <div>
+        <div className={styles["justify"] + ' ' + styles["advantages_border-top"]}>
             <Image src={signalLogo}/>
-            <p>Signal</p>
+            <p className={styles["advantages_item_text"]}>Signal</p>
         </div>
-        <div>
+        <div className={styles["justify"] + ' ' + styles["advantages_border-top"]}>
             <Image src={telegramLogo}/>
-            <p>Telegram</p>
+            <p className={styles["advantages_item_text"]}>Telegram</p>
         </div>
-        <div>
+        <div className={styles["justify"] + ' ' + styles["advantages_border-top"]}>
             <Image src={whatsAppLogo}/>
-            <p>WhatsApp</p>
+            <p className={styles["advantages_item_text"]}>WhatsApp</p>
         </div>
       </div>
-      <div
-        style={{ display: "grid", gridTemplateColumns: "2fr repeat(4, 1fr)" }}
-      >
+      <div className={styles["advantages"]}>
         {advantagesData.map((item, key) => 
           <AdvantagesRow
             key={key}
