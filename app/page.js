@@ -3,7 +3,7 @@
 // import mobile2 from "./assets/img/mobile_2.png";
 // import styles from "./assets/styles/main-page.module.scss";
 
-import FirstSection from "./components/MainPageFirstSection";
+import FirstSection from "./components/FirstSection";
 import Possibilities from "./components/Possibilities";
 import Security from "./components/Security";
 
