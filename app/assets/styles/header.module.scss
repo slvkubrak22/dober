@@ -8,6 +8,7 @@
     padding: 34px 0;
     position: fixed;
     width: 1300px;
+    z-index: 10;
 
     &_list {
         display: flex;

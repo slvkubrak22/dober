@@ -96,3 +96,21 @@
 
     }
 }
+
+.advantages-item {
+    background-color: antiquewhite;
+    padding: 28px;
+    text-align: start;
+    border-top: 1px solid #31313126;
+    border-bottom: 1px solid #31313126;
+
+    &_text {
+        font-size: 22px;
+        font-weight: 600;
+    } 
+}
+.just {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
