@@ -7,6 +7,7 @@ import Advantages from "./components/Advantages";
 import FirstSection from "./components/FirstSection";
 import Possibilities from "./components/Possibilities";
 import Security from "./components/Security";
+import UseDober from "./components/UseDober";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Possibilities />
       <Security />
       <Advantages />
+      <UseDober />
     </>
   );
 }
