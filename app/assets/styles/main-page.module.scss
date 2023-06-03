@@ -65,11 +65,14 @@
     }
 
     &_bg-color1{
-        background-color: #732BA7;
+        background: linear-gradient(120deg, #732ba7, rgb(115 43 167 / 57%));
     }
 
     &_bg-color2 {
-        background-color: #215AC1;
+        background: linear-gradient(120deg, #215ac1, rgb(33 90 193 / 57%));
+    }
+    &_bg-color3 {
+        background-color: #F3F3F4;
     }
 
     &_h3,
@@ -83,6 +86,10 @@
         right: 16px;
         transition: all 0.3s;
     }
+}
+
+.bg-linear {
+    background: linear-gradient(322deg, rgb(255 255 255 / 30%), transparent)
 }
 
 .security {
@@ -133,3 +140,47 @@
     align-items: center;
     flex-direction: column;
 }
+
+.arrow-vector {
+    fill: $main-color-text2;
+}
+
+.info-for-companies {
+    &_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    &_item:hover {
+        background-image: linear-gradient(120deg, #215ac1, rgb(33 90 193 / 57%));
+        transition: all linear 0.3s;
+    }
+    &_h3,
+    &_p {
+        color: $main-color-text2;
+    }
+    &_item:hover &_h3,
+    &_item:hover &_p {
+        color: $main-color-text1;
+    }
+    &_item:hover .arrow-vector {
+        fill: $main-color-text1;
+    }
+}
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
