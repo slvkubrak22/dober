@@ -6,7 +6,7 @@ import linkedinLogo from "../assets/img/linkedin-logo.svg";
 import styles from "../assets/styles/main-page.module.scss";
 
 
-export default function Subsribe() {
+export default function Subscribe() {
     
     return(
         <section className="container">

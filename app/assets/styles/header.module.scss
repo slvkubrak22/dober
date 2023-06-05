@@ -21,23 +21,47 @@
     &_buttons-container {
         display: flex;
         margin-right: 20px;
-        // button {
-        //     background-color: $main-color-text1;
-        // }
-        // button:hover {
-        //     border: 2px solid $main-color-text1;
-        //     background-color: transparent;
-        //     color: $main-color-text1;
-        // }
     }
     &_select-lang {
         display: flex;
         align-items: center;
+        cursor: pointer;
+        position: relative;
         img {
             margin: 0 5px 0 10px;
-            cursor: pointer;
+        }
+
+        &:hover .drop-menu {
+            display: block;
+        }
+        &:hover .menu-arrow-lang {
+            rotate: 180deg;
         }
     }
 }
 
+.menu-arrow {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    transition: all 0.3s linear;
+}
+
+.aaa:hover .drop-menu {
+    display: block; 
+}
+
+.drop-menu {
+    position: absolute;
+    top: 40px;
+    right: -20px;
+    background-color: $main-color-text2;
+    padding: 20px;
+    border-radius: 15px;
+    display: none;
+
+    & p:hover {
+        color: red;
+    }
+}
 

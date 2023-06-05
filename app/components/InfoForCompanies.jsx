@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import styles from "../assets/styles/main-page.module.scss";
 
-import arrow from "../assets/img/arrow-vector.svg";
 import img1 from "../assets/img/info-for-companies/img1.png";
 import img2 from "../assets/img/info-for-companies/img2.png";
 import img3 from "../assets/img/info-for-companies/img3.png";
