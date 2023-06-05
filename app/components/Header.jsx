@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+// import { useEffect, useState } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -14,10 +14,18 @@ import style from '../assets/styles/header.module.scss';
 
 export default function Header() {
 
-    const [selectedLanguage, setSelectedLanguage] = useState('en');
-    const handleSelectedLanguage = (e) => {
-        setSelectedLanguage(e.target.value);
-    }
+    // const [isClient, setIsClient] = useState(false);
+    // useEffect(() => {
+    //     setIsClient(true)
+    // }, [])
+    // if (!isClient) {
+    //     return null;
+    // }
+
+    // const [selectedLanguage, setSelectedLanguage] = useState('en');
+    // const handleSelectedLanguage = (e) => {
+    //     setSelectedLanguage(e.target.value);
+    // }
 
     return(
         <header className="container">
@@ -51,7 +59,7 @@ export default function Header() {
                     <Image className="logo" src={twitter_logo} alt="twitter logo"/>
                     <div className={style["header_select-lang"]}>
                         <Image src={globe} alt="change language icon"/>
-                        <p style={{marginTop: 18}}>{selectedLanguage}</p>
+                        <p style={{marginTop: 18}}>EN</p>
                         <Image className={style["menu-arrow"] + ' ' + style["menu-arrow-lang"]} src={arrow} alt="menu arrow" style={{right: -20, top: 22}}/>
                         <div className={style["drop-menu"]}>
                             <p value="ru">RU</p>

@@ -1,3 +1,4 @@
+// import useClient from 'react-server-components';
 import Footer from './components/Footer';
 import Header from './components/Header';
 // import './globals.css';
@@ -9,6 +10,9 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+  // useClient();
+
   return (
     <html lang="en">
       
