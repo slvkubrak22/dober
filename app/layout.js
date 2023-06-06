@@ -1,8 +1,19 @@
-// import useClient from 'react-server-components';
+"use client"
+
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import rootReducer from './reducer';
+
+// import { useEffect } from 'react';
+// import { useSelector, useDispatch, Provider } from 'react-redux';
+import { changeLanguage } from './actions';
+
 import Footer from './components/Footer';
 import Header from './components/Header';
-// import './globals.css';
+
 import './global.scss';
+
+const store = createStore(rootReducer)
 
 export const metadata = {
   title: 'Dober',
@@ -11,19 +22,26 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  // useClient();
+  // const dispatch = useDispatch();
+  // const language = useSelector((state) => state.language);
+   
+  // useEffect(() => {
+  //   dispatch(changeLanguage('ru'));
+  // }, [dispatch]);
 
   return (
-    <html lang="en">
-      
-      <body>
-        <Header />
-        <main>
-          {children}
-        </main>
-        <Footer />
-      </body>
-      
-    </html>
+    <Provider store={store}>
+      <html lang="en">
+        
+        <body>
+          <Header />
+          <main>
+            {children}
+          </main>
+          <Footer />
+        </body>
+        
+      </html>
+    </Provider>
   )
 }
