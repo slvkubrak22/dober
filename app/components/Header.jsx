@@ -1,7 +1,8 @@
 "use client"
 
-import { useSelector, useDispatch } from "react-redux";
-import { changeLanguage } from "../actions";
+// import { useSelector, useDispatch } from "react-redux";
+// import { changeLanguage } from "../actions";
+import { changeCurrentLanguage } from "../translater";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,13 +16,14 @@ import style from '../assets/styles/header.module.scss';
 
 export default function Header() {
 
-    const dispatch = useDispatch();
-    const language = useSelector((state) => state.language);
-    const texts = useSelector((state) => state.texts[language]);
+    // const dispatch = useDispatch();
+    // const language = useSelector((state) => state.language);
+    // const texts = useSelector((state) => state.texts[language]);
     
-    const handleLanguageChange = (selectedLanguage) => {
-        dispatch(changeLanguage(selectedLanguage))
-    }
+    // const handleLanguageChange = (selectedLanguage) => {
+    //     dispatch(changeLanguage(selectedLanguage))
+    // }
+    const { language, texts, handleLanguageChange } = changeCurrentLanguage();
 
     return(
         <header className="container">

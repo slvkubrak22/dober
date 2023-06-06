@@ -1,4 +1,10 @@
+"use client"
+
+import { changeCurrentLanguage } from "../translater";
 import Image from "next/image";
+
+// import { useSelector, useDispatch } from "react-redux";
+// import { changeLanguage } from "../actions";
 
 import twitterLogo from "../assets/img/twitter-logo-color.svg";
 import linkedinLogo from "../assets/img/linkedin-logo.svg";
@@ -7,12 +13,14 @@ import styles from "../assets/styles/main-page.module.scss";
 
 
 export default function Subscribe() {
-    
+
+    const { texts } = changeCurrentLanguage();
+
     return(
         <section className="container">
             <div className={styles["subscribe"]}>
                 <h2 className={styles["subscribe_text-center"]}>
-                    Subscribe for news
+                    {texts.newText}
                 </h2>
                 <div className={styles["subscribe_item-container"]}>
                     <div className={styles["subscribe_item-container_item"]}>

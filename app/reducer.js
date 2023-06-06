@@ -19,7 +19,8 @@ const initialState = {
       help: 'Help',
       donate: 'Donate',
       download: 'Download',
-      language: 'EN'
+      language: 'EN',
+      newText: 'English'
     },
     ru: {
       home: 'Главная',
@@ -30,7 +31,8 @@ const initialState = {
       help: 'Помощь',
       donate: 'Пожертвовать',
       download: 'Скачать',
-      language: 'RU'
+      language: 'RU',
+      newText: 'Russian'
     },
     ua: {
       home: 'Головна',
@@ -41,7 +43,8 @@ const initialState = {
       help: 'Довідка',
       donate: 'Пожертвувати',
       download: 'Завантажити',
-      language: 'UA'
+      language: 'UA',
+      newText: 'Ukrainian'
     }
   }
 };
