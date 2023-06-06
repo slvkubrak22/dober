@@ -20,7 +20,7 @@ const initialState = {
       donate: 'Donate',
       download: 'Download',
       language: 'EN',
-      newText: 'English'
+      subscribe: 'Subscribe for news'
     },
     ru: {
       home: 'Главная',
@@ -32,7 +32,7 @@ const initialState = {
       donate: 'Пожертвовать',
       download: 'Скачать',
       language: 'RU',
-      newText: 'Russian'
+      subscribe: 'Подпишитесь на новости'
     },
     ua: {
       home: 'Головна',
@@ -44,7 +44,7 @@ const initialState = {
       donate: 'Пожертвувати',
       download: 'Завантажити',
       language: 'UA',
-      newText: 'Ukrainian'
+      subscribe: 'Підпишіться на новини'
     }
   }
 };

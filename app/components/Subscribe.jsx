@@ -20,7 +20,7 @@ export default function Subscribe() {
         <section className="container">
             <div className={styles["subscribe"]}>
                 <h2 className={styles["subscribe_text-center"]}>
-                    {texts.newText}
+                    {texts.subscribe}
                 </h2>
                 <div className={styles["subscribe_item-container"]}>
                     <div className={styles["subscribe_item-container_item"]}>
