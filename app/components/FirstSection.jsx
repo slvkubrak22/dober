@@ -1,15 +1,22 @@
+"use client"
+
+import { useTranslation } from "react-i18next";
+
 import Image from "next/image";
 import mobile1 from "../assets/img/mobile_1.png";
 import mobile2 from "../assets/img/mobile_2.png";
 import styles from "../assets/styles/main-page.module.scss";
 
 export default function FirstSection() {
+
+  const { t } = useTranslation();
+
   return (
     <section className={styles["bg_color"]}>
       <div style={{ height: 100 }}></div>
       <div className="container">
         <h1 className={styles["first-section_text-color"]}>
-          Платформа захищеного спілкування
+          {t("main_page_title")}
         </h1>
         <div className={styles["first-section"]}>
           <div className={styles["first-section_subitem"]}>
@@ -21,7 +28,7 @@ export default function FirstSection() {
                   styles["first-section_text-end"]
                 }
               >
-                Індивідуальне користування
+                {t("main_page_first_section_left_title")}
               </h2>
               <p
                 className={
@@ -32,15 +39,14 @@ export default function FirstSection() {
                   styles["first-section_pos-end"]
                 }
               >
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
+                {t("main_page_first_section_left_text")}
               </p>
               <button
                 className={
                   styles["first-section_pos-end"] + " " + styles["button"]
                 }
               >
-                Learn More
+                {t("button_learn_more")}
               </button>
             </div>
             <Image
@@ -57,18 +63,17 @@ export default function FirstSection() {
             />
             <div className={styles["first-section_description"]}>
               <h2 className={styles["first-section_text-color"]}>
-                Індивідуальне користування
+                {t("main_page_first_section_right_title")}
               </h2>
               <p className={styles["first-section_text-color"]}>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
+                {t("main_page_first_section_right_text")}
               </p>
               <button
                 className={
                   styles["first-section_pos-start"] + " " + styles["button"]
                 }
               >
-                Learn More
+                {t("button_learn_more")}
               </button>
             </div>
           </div>

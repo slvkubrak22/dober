@@ -55,9 +55,6 @@ export default function Header() {
                         <p style={{marginTop: 18}}>{t('language')}</p>
                         <Image className={style["menu-arrow"] + ' ' + style["menu-arrow-lang"]} src={arrow} alt="menu arrow" style={{right: -20, top: 22}}/>
                         <div className={style["drop-menu"]}>
-                            {/* <p value="ru">RU</p>
-                            <p value="ua">UA</p>
-                            <p value="en">EN</p> */}
                             <p onClick={() => handleLanguageChange('ru')}>RU</p>
                             <p onClick={() => handleLanguageChange('ua')}>UA</p>
                             <p onClick={() => handleLanguageChange('en')}>EN</p>

@@ -8,5 +8,30 @@
     "donate": "Donate",
     "download": "Download",
     "language": "EN",
-    "subscribe": "Subscribe for news"
+    "subscribe": "Subscribe for news",
+
+    "button_learn_more": "Learn more.", 
+
+    "main_page_title": "A platform for all your secure internal and corporate communications. Privacy in communication.",
+    "main_page_first_section_left_title": "Personal and family usage",
+    "main_page_first_section_left_text": "If you value your safety and security – the Dober app is just for you. Safe. Anonymous. Free of charge. No spam, no ads, and no personal data collection.",
+    "main_page_first_section_right_title": "Information for corporate use.",
+    "main_page_first_section_right_text": "Dober provides encryption on multiple levels and guarantees secure connection to the servers. Additionally, push notifications do not disclose the contents of the message or any meta-data to the OS the app is running on, ensuring no data is leaked to a middleman. If you value security and anonymity above all else, Dober is a great solution for your business. Data leaks will not be a problem anymore.",
+
+    "main_page_possibilities_title": "Our features",
+    "main_page_possibilities_text": "Messenger for those who value their privacy. Communicate anonymously and safely without disclosing your personal information. No ads, no spam, no data collection.",
+    "main_page_possibilities_feature_1_title": "Privacy",
+    "main_page_possibilities_feature_1_text": "This is not an additional marketing option, but the principle that we adhere to and based on which we work. Only trusted people have access to the server.",
+    "main_page_possibilities_feature_2_title": "Security.",
+    "main_page_possibilities_feature_2_text": "You don't have to worry about communication history. We guarantee protection of your information in case of loss of your mobile device or other devices.",
+    "main_page_possibilities_feature_3_title": "Availability.",
+    "main_page_possibilities_feature_3_text": "We are available on all platforms: IOS, Android, and Web. Gather people you know well in group chat.",
+    "main_page_possibilities_feature_4_title": "Anonymity.",
+    "main_page_possibilities_feature_4_text": "Your account will not be linked to a mobile phone number or email address.",
+    "main_page_possibilities_feature_5_title": "Functionality.",
+    "main_page_possibilities_feature_5_text": "Intuitive and pleasant interface. A familiar and efficient set of features, such as group and personal chats, file and document sharing.",
+    "main_page_possibilities_feature_6_title": "Data Encryption.",
+    "main_page_possibilities_feature_6_text": "Multi-level encryption of calls and messages for added security. Trusted connection between servers. Secure push notifications that allow you to display the message without compromising security and without transmitting metadata.",
+
+    "down_load_title": "Dober for your use"
 }

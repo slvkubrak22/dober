@@ -1,11 +1,18 @@
+"use client"
+
+import { useTranslation } from "react-i18next";
+
 import styles from "../assets/styles/download-page.module.scss";
 
 export default function Download() {
+
+    const { t } = useTranslation()
+ 
   return (
     <>
         <div style={{height: 100}}></div>
         <section className="container">
-            <h2 className="" style={{textAlign: 'center'}}>Dober для вашого використання</h2>
+            <h2 className="" style={{textAlign: 'center'}}>{t("download_page_title")}</h2>
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                 <div>
                     <p>Mobile app</p>
