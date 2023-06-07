@@ -1,10 +1,13 @@
 "use client"
 
 import { useTranslation } from "react-i18next";
-
+import { usePathname } from "next/navigation";
 import styles from "../assets/styles/download-page.module.scss";
 
 export default function Download() {
+
+    const pathname = usePathname();
+    console.log(pathname);
 
     const { t } = useTranslation()
  

@@ -1,6 +1,10 @@
 "use client"
 
 import { useTranslation } from "react-i18next";
+// import { useRouter } from "next/router";
+// import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -13,6 +17,7 @@ import arrow from "../assets/img/header-arrow.svg";
 import style from '../assets/styles/header.module.scss';
 
 
+
 export default function Header() {
 
     const {t, i18n} = useTranslation();
@@ -20,8 +25,31 @@ export default function Header() {
         i18n.changeLanguage(selectedLanguage);
     };
 
+    
+    const router = useRouter();
+    const pathname = usePathname()
+    console.log(pathname)
+    const changeTextColor = () => {
+        if(pathname === "/") {
+           return "red"
+        } else if (pathname === "/download") {
+            return "green"
+        }
+    }
+    // const isHome = router.pathname === '/download';
+    console.log(router)
+    // const getPageColor = () => {
+    //     if (router.pathname === "/") {
+    //       return "red";
+    //     } else {
+    //       return "green";
+    //     }
+    //   };
+    // useEffect(() => {
+    //     console.log(router.pathname === "/download/page");
+    // }, [router.pathname]);
     return(
-        <header className="container">
+        <header className="container" style={{color: changeTextColor()}}>
             <div className={style["header"] + ' ' + style["container"]}>
                 <Link href='/'>
                     <Image className="logo" src={logo} alt="main Dober logo" />
