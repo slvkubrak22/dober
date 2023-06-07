@@ -26,7 +26,7 @@ function InfoItem({
             styles["info-for-companies_item"]
         }
         >
-            <Image src={img}/>
+            <Image src={img} alt="info icon"/>
             <h3 className={styles["info-for-companies_h3"]}>{title}</h3>
             <p className={styles["info-for-companies_p"]}>
                 {text}

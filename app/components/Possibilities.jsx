@@ -21,7 +21,7 @@ export default function Possibilities() {
             </p>
             <div className={styles["possibilities_container"]}>
                 <div className={styles["possibilities_item"] + ' ' + styles["span-two"] + ' ' + styles["possibilities_bg-color1"]}>
-                    <Image src={img1}/>
+                    <Image src={img1} alt="security icon"/>
                     <h3 className={styles["possibilities_h3"]}>Безпека</h3>
                     <p className={styles["possibilities_p"]}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque a voluptatem repellendus ex, beatae necessitatibus perspiciatis natus aliquam cum minima nemo nulla! Veritatis ducimus molestias, reprehenderit quo pariatur nihil incidunt.</p>
                     <div className={styles["possibilities_arrow"]}>
@@ -29,21 +29,21 @@ export default function Possibilities() {
                     </div>
                 </div>
                 <div className={styles["possibilities_item"] + ' ' + styles["possibilities_bg-color1"]}>
-                    <Image src={img2}/>
+                    <Image src={img2} alt="privacy icon"/>
                     <h3 className={styles["possibilities_h3"]}>Конфіденційність</h3>
                     <div className={styles["possibilities_arrow"]}>
                         <Image src={arrow} alt="arrow" />
                     </div>
                 </div>
                 <div className={styles["possibilities_item"] + ' ' + styles["possibilities_bg-color2"]}>
-                    <Image src={img4}/>
+                    <Image src={img4} alt="functionality icon"/>
                     <h3 className={styles["possibilities_h3"]}>Функціональність</h3>
                     <div className={styles["possibilities_arrow"]}>
                         <Image src={arrow} alt="arrow" />
                     </div>
                 </div>
                 <div className={styles["possibilities_item"] + ' ' + styles["span-two"] + ' ' + styles["possibilities_bg-color2"]}>
-                    <Image src={img6}/>
+                    <Image src={img6} alt="anonymity icon"/>
                     <h3 className={styles["possibilities_h3"]}>Анонімність</h3>
                     <p className={styles  + ' ' + styles["possibilities_p"]}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque a voluptatem repellendus ex, beatae necessitatibus perspiciatis natus aliquam cum minima nemo nulla! Veritatis ducimus molestias, reprehenderit quo pariatur nihil incidunt.</p>
                     <div className={styles["possibilities_arrow"]}>
@@ -51,14 +51,14 @@ export default function Possibilities() {
                     </div>
                 </div>
                 <div className={styles["possibilities_item"] + ' ' + styles["possibilities_bg-color1"]}>
-                    <Image src={img3}/>
+                    <Image src={img3} alt="encrypt icon"/>
                     <h3 className={styles["possibilities_h3"]}>Шифрування</h3>
                     <div className={styles["possibilities_arrow"]}>
                         <Image src={arrow} alt="arrow" />
                     </div>
                 </div>
                 <div className={styles["possibilities_item"] + ' ' + styles["possibilities_bg-color2"]}>
-                    <Image src={img5}/>
+                    <Image src={img5} alt="mobility icon"/>
                     <h3 className={styles["possibilities_h3"]}>Мобільність</h3>
                     <div className={styles["possibilities_arrow"]}>
                         <Image src={arrow} alt="arrow" />
