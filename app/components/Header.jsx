@@ -1,8 +1,7 @@
 "use client"
 
-// import { useSelector, useDispatch } from "react-redux";
-// import { changeLanguage } from "../actions";
-import { changeCurrentLanguage } from "../translater";
+import { useTranslation } from "react-i18next";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,14 +15,10 @@ import style from '../assets/styles/header.module.scss';
 
 export default function Header() {
 
-    // const dispatch = useDispatch();
-    // const language = useSelector((state) => state.language);
-    // const texts = useSelector((state) => state.texts[language]);
-    
-    // const handleLanguageChange = (selectedLanguage) => {
-    //     dispatch(changeLanguage(selectedLanguage))
-    // }
-    const { language, texts, handleLanguageChange } = changeCurrentLanguage();
+    const {t, i18n} = useTranslation();
+    const handleLanguageChange =(selectedLanguage) => {
+        i18n.changeLanguage(selectedLanguage);
+    };
 
     return(
         <header className="container">
@@ -33,31 +28,31 @@ export default function Header() {
                 </Link>
                 <ul className={style["header_list"]}>
                     <li style={{position: 'relative'}} className="aaa">
-                        <Link href='/' className={style["header_item"]}>{texts.product}</Link>
+                        <Link href='/' className={style["header_item"]}>{t('product')}</Link>
                         <Image className={style["menu-arrow"]} src={arrow} alt="menu arrow"/>
                         <div className={style["drop-menu"]}>
-                            <p>{texts.features}</p>
-                            <p>{texts.security}s</p>
+                            <p>{t('features')}</p>
+                            <p>{t('security')}s</p>
                         </div>
                     </li>
                     <li>
-                        <Link href='./for_companies' className={style["header_item"]}>{texts.companies}</Link>
+                        <Link href='./for_companies' className={style["header_item"]}>{t('companies')}</Link>
                     </li>
-                    <li><Link href='./help' className={style["header_item"]}>{texts.help}</Link></li>
+                    <li><Link href='./help' className={style["header_item"]}>{t('help')}</Link></li>
                 </ul>
                 <div style={{display: 'flex', alignItems: 'center'}}>
                     <div className={style["header_buttons-container"]}>
                         <Link href="./donate">
-                            <button style={{margin: '0 10px'}}>{texts.donate}</button>
+                            <button style={{margin: '0 10px'}}>{t('donate')}</button>
                         </Link>
                         <Link href="./download">
-                            <button>{texts.download}</button>
+                            <button>{t('download')}</button>
                         </Link>
                     </div>
                     <Image className="logo" src={twitter_logo} alt="twitter logo"/>
                     <div className={style["header_select-lang"]}>
                         <Image src={globe} alt="change language icon"/>
-                        <p style={{marginTop: 18}}>{texts.language}</p>
+                        <p style={{marginTop: 18}}>{t('language')}</p>
                         <Image className={style["menu-arrow"] + ' ' + style["menu-arrow-lang"]} src={arrow} alt="menu arrow" style={{right: -20, top: 22}}/>
                         <div className={style["drop-menu"]}>
                             {/* <p value="ru">RU</p>

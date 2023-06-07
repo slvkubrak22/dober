@@ -1,10 +1,7 @@
 "use client"
 
-import { changeCurrentLanguage } from "../translater";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
-
-// import { useSelector, useDispatch } from "react-redux";
-// import { changeLanguage } from "../actions";
 
 import twitterLogo from "../assets/img/twitter-logo-color.svg";
 import linkedinLogo from "../assets/img/linkedin-logo.svg";
@@ -14,13 +11,13 @@ import styles from "../assets/styles/main-page.module.scss";
 
 export default function Subscribe() {
 
-    const { texts } = changeCurrentLanguage();
+    const { t } = useTranslation();
 
     return(
         <section className="container">
             <div className={styles["subscribe"]}>
                 <h2 className={styles["subscribe_text-center"]}>
-                    {texts.subscribe}
+                    {t('subscribe')}
                 </h2>
                 <div className={styles["subscribe_item-container"]}>
                     <div className={styles["subscribe_item-container_item"]}>
