@@ -1,15 +1,15 @@
 "use client"
 
 import { useTranslation } from "react-i18next";
-// import { useRouter } from "next/router";
-// import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
+// import { NextConfig } from 'next';
 
 import Link from "next/link";
 import Image from "next/image";
 
-import logo from '../assets/img/logo.png';
+import logo1 from '../assets/img/logo.png';
+import logo2 from "../assets/img/logo2.svg"
 import twitter_logo from '../assets/img/twitter-logo.png';
 import globe from '../assets/img/globe.png';
 import arrow from "../assets/img/header-arrow.svg";
@@ -25,34 +25,22 @@ export default function Header() {
         i18n.changeLanguage(selectedLanguage);
     };
 
-    
     const router = useRouter();
     const pathname = usePathname()
     console.log(pathname)
     const changeTextColor = () => {
         if(pathname === "/") {
-           return "red"
+           return "#FFF"
         } else if (pathname === "/download") {
-            return "green"
+            return "#04022A"
         }
     }
-    // const isHome = router.pathname === '/download';
-    console.log(router)
-    // const getPageColor = () => {
-    //     if (router.pathname === "/") {
-    //       return "red";
-    //     } else {
-    //       return "green";
-    //     }
-    //   };
-    // useEffect(() => {
-    //     console.log(router.pathname === "/download/page");
-    // }, [router.pathname]);
+
     return(
         <header className="container" style={{color: changeTextColor()}}>
             <div className={style["header"] + ' ' + style["container"]}>
                 <Link href='/'>
-                    <Image className="logo" src={logo} alt="main Dober logo" />
+                    <Image className="logo" src={pathname === "/" ? logo1 : logo2} alt="main Dober logo" />
                 </Link>
                 <ul className={style["header_list"]}>
                     <li style={{position: 'relative'}} className="aaa">
