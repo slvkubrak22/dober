@@ -1,3 +1,7 @@
+"use client"
+
+import { useTranslation } from "react-i18next";
+
 import Image from "next/image";
 
 import img1 from "../assets/img/apple.png";
@@ -8,6 +12,9 @@ import img3 from "../assets/img/web.png";
 import styles from "../assets/styles/use-dober.module.scss"
 
 export default function UseDober() {
+
+    const { t } = useTranslation();
+ 
     return(
         <section className={styles["bg_color"]}>
             <div className="container">
@@ -27,14 +34,10 @@ export default function UseDober() {
                                 <p className={styles["dober-container_p"]}>Web</p>
                             </div>
                         </div>
-                        {/* <div className={styles["dober-container"]}>
-                            <p className={styles["dober-container_p"]}>IOS</p>
-                            <p className={styles["dober-container_p"]}>Android</p>
-                            <p className={styles["dober-container_p"]}>Web</p>
-                        </div> */}
                     </div>
                     <div style={{padding: "100px 0"}}>
-                        <h2 className={styles["h2"]}>Use dober on your smartphone, tablet, or on your desktop computer</h2>
+                        <h2 className={styles["h2"]}>{t("use_dober_title")}</h2>
+                        <p>{t("use_dober_text")}</p>
                         <button>Download</button>
                     </div>
                 </div>

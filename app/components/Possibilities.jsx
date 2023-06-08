@@ -7,12 +7,12 @@ import Image from "next/image";
 import styles from "../assets/styles/main-page.module.scss";
 
 import arrow from '../assets/img/arrow.png';
-import img1 from "../assets/img/possibilities/img-safety.png";
-import img2 from "../assets/img/possibilities/img-privacy.png";
-import img3 from "../assets/img/possibilities/img-encryption.png";
-import img4 from "../assets/img/possibilities/img-functionality.png";
-import img5 from "../assets/img/possibilities/img-mobility.png";
-import img6 from "../assets/img/possibilities/img-anonymity.png";
+import img1 from "../assets/img/possibilities/img-safety.svg";
+import img2 from "../assets/img/possibilities/img-privacy.svg";
+import img3 from "../assets/img/possibilities/img-encryption.svg";
+import img4 from "../assets/img/possibilities/img-functionality.svg";
+import img5 from "../assets/img/possibilities/img-mobility.svg";
+import img6 from "../assets/img/possibilities/img-anonymity.svg";
 
 export default function Possibilities() {
      

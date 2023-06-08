@@ -1,30 +1,25 @@
+"use client"
+
+import { useTranslation } from "react-i18next";
+
 import Image from "next/image";
 import styles from '../assets/styles/main-page.module.scss';
 
 import image from '../assets/img/security.png'
 
 export default function Security() {
+
+  const { t } = useTranslation();
+ 
   return (
     <section className="container">
       <div className={styles["security"]}>
-        <div className="security_text">
-          <h2>безпека</h2>
+        <div className={styles["security_text"]}>
+          <h2>{t("main_page_security_title")}</h2>
           <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
-            ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-            duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-            amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-            amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consstrud amet. Amet est sit aliqua dolor do
-            amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consequat sunt nostrud amet. Amet minim mollit
-            non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-            officia consequat duis enim velit mollit. Exercitation veniam
-            consequat sunt nostrud amet.
+            {t("main_page_security_text")}
           </p>
-          <button className={styles["security_button"]}>Learn more</button>
+          <button className={styles["security_button"]}>{t("button_learn_more")}</button>
         </div>
         <Image src={image} alt="security image" />
       </div>

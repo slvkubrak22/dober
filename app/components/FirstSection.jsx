@@ -70,7 +70,7 @@ export default function FirstSection() {
               </p>
               <button
                 className={
-                  styles["first-section_pos-start"] + " " + styles["button"]
+                  styles["first-section_pos-start"] + " " + styles["first-section_button"]
                 }
               >
                 {t("button_learn_more")}

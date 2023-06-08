@@ -7,6 +7,10 @@
         display: flex;
         align-items: center;
         width: 50%;
+
+        & img {
+            align-self: end;
+        }
     }
 
     &_description {
@@ -34,6 +38,10 @@
     &_img-container {
         max-width: fit-content;
         max-width: 400px;
+    }
+
+    &_button {
+        margin-bottom: 20px;
     }
 }
 
@@ -96,6 +104,16 @@
     display: flex;
     align-items: center;
     margin-top: 50px;
+    padding: 0 30px;
+
+    & img {
+        max-height: 500px;
+    }
+
+    &_text {
+        max-width: 500px;
+        margin: 0 50px 0 0;
+    }
 
     &_button {
         color: $main-color-text1;
@@ -108,6 +126,7 @@
     display: grid;
     grid-template-columns: 500px repeat(4, 1fr);
     column-gap: 20px;
+    padding: 0 30px;
 
     &_item {
         padding: 28px;
@@ -146,6 +165,7 @@
 }
 
 .info-for-companies {
+    padding: 0 30px;
     &_list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

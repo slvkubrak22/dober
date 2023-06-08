@@ -8,9 +8,9 @@
     "donate": "Donate",
     "download": "Download",
     "language": "EN",
-    "subscribe": "Subscribe for news",
+    "subscribe": "Social or Stay in touch",
 
-    "button_learn_more": "Learn more.", 
+    "button_learn_more": "Learn more", 
 
     "main_page_title": "A platform for all your secure internal and corporate communications. Privacy in communication.",
     "main_page_first_section_left_title": "Personal and family usage",
@@ -32,6 +32,31 @@
     "main_page_possibilities_feature_5_text": "Intuitive and pleasant interface. A familiar and efficient set of features, such as group and personal chats, file and document sharing.",
     "main_page_possibilities_feature_6_title": "Data Encryption.",
     "main_page_possibilities_feature_6_text": "Multi-level encryption of calls and messages for added security. Trusted connection between servers. Secure push notifications that allow you to display the message without compromising security and without transmitting metadata.",
+
+    "main_page_security_title": "Security or Secure",
+    "main_page_security_text": "Your account is not linked to mobile phone number or email address and is completely anonymous. Your communication in the application is protected from unauthorized third-party access. We do not transfer users personal data to third-party companies or government agencies. The application does not store your personal data and encrypts your personal information, such as IP address or contacts list. We guarantee secure data storage. Additional security features, such as notifying chat participants of a screenshot taken, which cannot be disabled.", 
+
+    "main_page_advantages_title": "Our benefits",
+    "main_page_advantages_text_1": "End-to-end encryption enabled by default. No collection of personal data. Encrypting of personal identifiable information (IP address, contact list). The use of strong cryptographic algorithms. Persistance of user data. Protection of correspondence from access to it by the application administration. Access by PIN code or passphrase (no access using face recognition systems). Protection of personal data from being transferred to state security agencies. Possibility of anonymous registration. Possibility to purge an account from the system. Notification of chat participants about the screenshot of the correspondence. Dedicated Server",
+
+    "main_page_info_for_companies_title": "Information for corporate use",
+    "main_page_info_for_companies_text": "A secure corporate messenger for communicating and interacting with your co-workers at any time, wherever you are. Dober corporate messenger is a turnkey solution, and only you control access to your internal information. Registration takes place without neither corporate email nor phone numbers, and only verified users will have access. This is a messenger without the risk of leaking corporate information or any important business documents",
+    "main_page_info_for_companies_title_item_1": "Get things done in one place",
+    "main_page_info_for_companies_text_item_1": "Comfortable and fast communication with colleagues in a secure environment without distractions. Work anywhere and anytime from any device that suits you.",
+    "main_page_info_for_companies_title_item_2": "Security",
+    "main_page_info_for_companies_text_item_2": "Internal documents will no longer end up on employees' private phones or other private messengers unaccounted for. Dober is a messenger without the risk of leaking corporate information or other business documents. Full control over information and the platform, as all external and internal communication takes place through your server.",
+    "main_page_info_for_companies_title_item_3": "Availability",
+    "main_page_info_for_companies_text_item_3": "User-friendly and intuitive interface. Integration with the corporate address book. Save time and productivity by having all the important functions at your fingertips, including regular chats, group chats, file, and document sharing. Available on all platforms",
+    "main_page_info_for_companies_title_item_4": "Isolated corporate server",
+    "main_page_info_for_companies_text_item_4": "You use your own corporate server with an arbitrary location. A dedicated server that can work without connection to the outside world. Messenger administration does not have any access to your server, not even for notifications",
+    "main_page_info_for_companies_title_item_5": "Privacy",
+    "main_page_info_for_companies_text_item_5": "Your user account is not linked to biometric data or your contact information. No data about your location or online presence is collected or shared.",
+    "main_page_info_for_companies_title_item_6": "Anonymity",
+    "main_page_info_for_companies_text_item_6": "Support for the Tor anonymization protocol (an option that allows you to hide your IP address and protect your traffic from interception).",
+
+
+    "use_dober_title": " Download and use Dober on your smartphone (IOS and Android), desktop (Web-application) or tablet",
+    "use_dober_text": "Safe. Anonymous. Free of charge. No spam, no ads, and no personal data collection",
 
     "down_load_title": "Dober for your use"
 }

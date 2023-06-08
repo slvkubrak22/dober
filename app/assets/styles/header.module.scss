@@ -4,10 +4,10 @@
     display: flex;
     // color: $main-color-text1;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 34px 0;
     position: fixed;
-    width: 1300px;
+    width: 100%;
     z-index: 10;
 
     &_list {
@@ -65,3 +65,7 @@
     }
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+}

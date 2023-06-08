@@ -228,12 +228,12 @@ body {
 }
 
 button {
-    padding: 14px 42px;
+    padding: 14px 30px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: $main-color-text2;
     background-color: $main-color-text1;
@@ -269,7 +269,7 @@ a {
 
 h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 44px;
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -278,6 +278,10 @@ h2 {
     font-size: 36px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.possibilities {
+    padding: 0 30px;
 }
 
 

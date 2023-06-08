@@ -1,19 +1,24 @@
+"use client"
+
+import { useTranslation } from "react-i18next";
+
 import Image from "next/image";
 
 import styles from "../assets/styles/main-page.module.scss";
 
-import img1 from "../assets/img/info-for-companies/img1.png";
-import img2 from "../assets/img/info-for-companies/img2.png";
-import img3 from "../assets/img/info-for-companies/img3.png";
-import img4 from "../assets/img/info-for-companies/img4.png";
-import img5 from "../assets/img/info-for-companies/img5.png";
-import img6 from "../assets/img/info-for-companies/img6.png";
+import img1 from "../assets/img/info-for-companies/img1.svg";
+import img2 from "../assets/img/info-for-companies/img2.svg";
+import img3 from "../assets/img/info-for-companies/img3.svg";
+import img4 from "../assets/img/info-for-companies/img4.svg";
+import img5 from "../assets/img/info-for-companies/img5.svg";
+import img6 from "../assets/img/info-for-companies/img6.svg";
 
 function InfoItem({
     img,
     title,
     text
 }) {
+
     return (
         <div
         className={
@@ -40,57 +45,60 @@ function InfoItem({
     );
 }
 
-const infoItemData = [
-    {
-        img: img1,
-        title: 'Зручність або Робіть все в одному місці.',
-        text: 'Комфортне та швидке спілкування з колегами в безпечному середовищі, де немає нічого зайвого. Працюйте де завгодно і коли завгодно з будь-якого зручного для вас пристрою.',
-    },
-    {
-        img: img2,
-        title: 'Безпека',
-        text: 'Комфортне та швидке спілкування з колегами в безпечному середовищі, де немає нічого зайвого. Працюйте де завгодно і коли завгодно з будь-якого зручного для вас пристрою.',
-    },
-    {
-        img: img3,
-        title: 'Мобільність',
-        text: 'Комфортне та швидке спілкування з колегами в безпечному середовищі, де немає нічого зайвого. Працюйте де завгодно і коли завгодно з будь-якого зручного для вас пристрою.',
-    },
-    {
-        img: img4,
-        title: 'Ізольований корпоративний сервер',
-        text: 'Комфортне та швидке спілкування з колегами в безпечному середовищі, де немає нічого зайвого. Працюйте де завгодно і коли завгодно з будь-якого зручного для вас пристрою.',
-    },
-    {
-        img: img5,
-        title: 'Приватність',
-        text: 'Комфортне та швидке спілкування з колегами в безпечному середовищі, де немає нічого зайвого. Працюйте де завгодно і коли завгодно з будь-якого зручного для вас пристрою.',
-    },
-    {
-        img: img6,
-        title: 'Анонімність',
-        text: 'Комфортне та швидке спілкування з колегами в безпечному середовищі, де немає нічого зайвого. Працюйте де завгодно і коли завгодно з будь-якого зручного для вас пристрою.',
-    }
-]
-
 export default function InfoForCompanies() {
+
+    const { t } = useTranslation();
+
+    const infoItemData = [
+        {
+            img: img1,
+            title: t("main_page_info_for_companies_title_item_1"),
+            text: t("main_page_info_for_companies_text_item_1"),
+        },
+        {
+            img: img2,
+            title: t("main_page_info_for_companies_title_item_2"),
+            text: t("main_page_info_for_companies_text_item_2"),
+        },
+        {
+            img: img3,
+            title: t("main_page_info_for_companies_title_item_3"),
+            text: t("main_page_info_for_companies_text_item_3"),
+        },
+        {
+            img: img4,
+            title: t("main_page_info_for_companies_title_item_4"),
+            text: t("main_page_info_for_companies_text_item_4"),
+        },
+        {
+            img: img5,
+            title: t("main_page_info_for_companies_title_item_5"),
+            text: t("main_page_info_for_companies_text_item_5"),
+        },
+        {
+            img: img6,
+            title: t("main_page_info_for_companies_title_item_6"),
+            text: t("main_page_info_for_companies_text_item_6"),
+        }
+    ]
+
     return (
         <section className="container">
-            <h2>інформація для компаній</h2>
-            <p style={{maxWidth: '50%'}} className={styles["info-for-companies_p"]}>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                sint. Velit officia consequat duis enim velit mollit. Exercitation
-                veniam consequat sunt nostrud amet.
-            </p>
-            <div className={styles["info-for-companies_list"]}>
-                {infoItemData.map((item, key) => 
-                    <InfoItem 
-                        key={key}
-                        img={item.img}
-                        title={item.title}
-                        text={item.text}
-                    />
-                )}
+            <div className={styles["info-for-companies"]}>
+                <h2>{t("main_page_info_for_companies_title")}</h2>
+                <p style={{maxWidth: '50%'}} className={styles["info-for-companies_p"]}>
+                    {t("main_page_info_for_companies_text")}
+                </p>
+                <div className={styles["info-for-companies_list"]}>
+                    {infoItemData.map((item, key) => 
+                        <InfoItem 
+                            key={key}
+                            img={item.img}
+                            title={item.title}
+                            text={item.text}
+                        />
+                    )}
+                </div>
             </div>
         </section>
     );
