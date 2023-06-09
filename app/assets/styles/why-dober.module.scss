@@ -1,0 +1,64 @@
+@import 'variables';
+
+.bg-color {
+    background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.main_image-container {
+    position: relative;
+
+    img {
+        z-index: 2;
+        position: relative;
+    }
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.circle1 {
+    width: 350px;
+    height: 350px;
+    border: solid 1px #FFFFFF4D;
+}
+
+.circle2 {
+    width: 480px;
+    height: 480px;
+    border: solid 1px #FFFFFF66;
+}
+
+.circle3 {
+    width: 576px;
+    height: 576px;
+    border: solid 1px #FFFFFF99;
+}
+
+.text-container {
+    max-width: 700px;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        color: $main-color-text1;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 200;
+        color: $main-color-text1;
+    }
+}

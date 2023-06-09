@@ -4,11 +4,8 @@
     display: flex;
     // color: $main-color-text1;
     align-items: center;
-    justify-content: space-around;
-    padding: 34px 0;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
+    justify-content: space-between;
+    padding: 14px 0;
 
     &_list {
         display: flex;
@@ -68,4 +65,26 @@
 .container {
     margin: 0 auto;
     max-width: 1300px;
+}
+
+.button-white {
+    border-color: $main-color-text1;
+    background-color: $main-color-text1;
+    color: $main-color-text2;
+}
+
+.button-white:hover {
+    background-color: transparent;
+    color: $main-color-text1;
+}
+
+.button-black {
+    border-color: $main-color-text2;
+    background-color: $main-color-text1;
+    color: $main-color-text2;
+}
+
+.button-black:hover {
+    background-color: $main-color-text2;
+    color: $main-color-text1;
 }
