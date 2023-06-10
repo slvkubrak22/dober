@@ -30,7 +30,7 @@ function AdvantagesRow({
             <Image src={doberItem} alt="Dober Item"/>
         </div>
         <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"]}>
-            <Image src={signalItem} alt="Ignal Item"/>
+            <Image src={signalItem} alt="Signal Item"/>
         </div>
         <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"]}>
             <Image src={telegramItem} alt="Telegram Item"/>

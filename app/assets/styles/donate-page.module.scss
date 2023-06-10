@@ -1,0 +1,149 @@
+@import 'variables';
+
+.text-center {
+    text-align: center;
+}
+
+.donate_top {
+    border-bottom: solid 1px #215AC16E;
+    padding: 0 0 60px 0;
+    margin: 0 0 50px 0;
+    .small-text {
+        font-size: $small-text;
+        color:#215AC1;
+        margin: 0 0 60px 0;
+    }
+}
+
+.donate_container {
+    display: flex;
+    justify-content: center;
+}
+
+.donate_action {
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 40px 0px #04022A26;
+    margin: 0 80px 0 0;
+
+    &_top {
+        background: $bg-color-1;
+        height: 80px;
+    }
+
+    .toggle-container {
+        display: flex;
+        align-items: center;
+        border-radius: 16px;
+        border: 1px solid #04022A33; 
+        overflow: hidden;
+        cursor: pointer;
+        align-self: center;
+        margin: 20px 0;       
+
+        & div {
+            padding: 10px;
+        }
+
+        .left {
+            // background:$bg-color-1;
+            // color: $main-color-text1;
+        }
+
+        .right {
+            padding: 10px 15px;
+        }
+        
+        .left:hover,
+        .right:hover {
+            background: $bg-color-1;
+            color: $main-color-text1;
+            transition: all 0.3s;
+        }
+    }
+
+    & select {
+        border: none;
+        border-bottom: 1px solid #04022A33;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        padding: 20px 20px 0;
+
+        & div {
+            border-radius: 8px;
+            border: solid 1px #04022A33;
+            text-align: center;
+            cursor: pointer;
+            padding: 20px;
+
+            &:hover {
+                background: $bg-color-1;
+                transition: all 0.3s;
+                color: $main-color-text1;
+            }
+        }
+
+        & sup {
+            margin: 0 6px
+        }
+    }
+    .item {
+        border-radius: 8px;
+        border: solid 1px #04022A33;
+        text-align: center;
+        cursor: pointer;
+        padding: 20px;
+
+        &:hover {
+            background: $bg-color-1;
+            transition: all 0.3s;
+            color: $main-color-text1;
+        }
+    }
+}
+
+.button {
+    background: $bg-color-1;
+    width: 100%;
+    color: $main-color-text1;
+}
+
+.donate_text {
+    max-width: 640px;
+}
+
+
+
+.donate_action_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & p {
+        max-width: 188px;
+        color: $main-color-text1
+    }
+}
+
+.donate_action_grid_bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}

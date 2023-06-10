@@ -36,13 +36,7 @@ export default function Header() {
             return "#04022A";
         }
     };
-    const changeBorder = () => {
-        if(pathname === "/") {
-            return "#FFF";
-         } else if (pathname === "/download") {
-             return "#04022A";
-         }
-    }
+      
 
     const [scroll, setScroll] = useState();
     const handleScroll = () => {
@@ -58,18 +52,25 @@ export default function Header() {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
-    const onChangeBgColor = () => {
+    const onChangeBlur = () => {
         if(scroll) {
             return "blur(20px)";
         } else {
             return "none";
         }   
     };
+    const onchangeBgColor = () => {
+        if(scroll) {
+            return "#9c0fd5fa";
+        } else {
+            return "transparent";
+        }
+    }; 
 
 
     return(
-        <header style={{color: changeTextColor(), position: 'fixed', zIndex: 10, width: '100%', backdropFilter: onChangeBgColor()}}>
-            <div> 
+        <header style={{backgroundColor: onchangeBgColor(), color: changeTextColor(), position: 'fixed', zIndex: 10, width: '100%', backdropFilter: onChangeBlur()}}>
+            <div style={{padding: '0 30px'}}> 
                 <div className={style["header"] + ' ' + style["container"]}>
                     <Link href='/'>
                         <Image className="logo" src={pathname === "/" ? logo1 : logo2} alt="main Dober logo" />
