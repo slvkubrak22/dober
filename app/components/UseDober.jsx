@@ -1,7 +1,7 @@
 "use client"
 
 import { useTranslation } from "react-i18next";
-
+import Link from "next/link";
 import Image from "next/image";
 
 import img1 from "../assets/img/apple.png";
@@ -38,7 +38,9 @@ export default function UseDober() {
                     <div style={{padding: "100px 0"}}>
                         <h2 className={styles["h2"]}>{t("use_dober_title")}</h2>
                         <p>{t("use_dober_text")}</p>
-                        <button>Download</button>
+                        <Link href="./download">
+                            <button>Download</button>
+                        </Link>
                     </div>
                 </div>
             </div>

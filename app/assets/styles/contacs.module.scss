@@ -1,0 +1,62 @@
+@import 'variables';
+
+.contacts-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+
+    & .phones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & a {
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    &_item {
+        margin-top: 50px;
+    }
+}
+
+.send-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+
+    & p {
+        font-weight: 700;
+    }
+
+    &_item {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+        & label {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        & input,
+        & textarea {
+            padding: 20px;
+            border-radius: 16px;
+            border: solid 1px #04022A66;
+            font-size: 20px;
+        }
+
+        & textarea {
+            resize: none;
+        }
+    }
+}
+
+.button {
+    background: $bg-color-1;
+    color: $main-color-text1;
+    align-self: baseline;
+    padding: 18px 100px;
+}

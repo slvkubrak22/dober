@@ -81,13 +81,14 @@ export default function Header() {
                             <Image className={style["menu-arrow"]} src={arrow} alt="menu arrow"/>
                             <div className={style["drop-menu"]}>
                                 <p>{t('features')}</p>
-                                <p>{t('security')}s</p>
+                                <p>{t('security')}</p>
                             </div>
                         </li>
                         <li>
                             <Link href='./for_companies' className={style["header_item"]}>{t('companies')}</Link>
                         </li>
                         <li><Link href='./help' className={style["header_item"]}>{t('help')}</Link></li>
+                        <li><Link href='./contacts' className={style["header_item"]}>Contacts</Link></li>
                     </ul>
                     <div style={{display: 'flex', alignItems: 'center'}}>
                         <div className={style["header_buttons-container"]}>

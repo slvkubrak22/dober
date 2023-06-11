@@ -76,7 +76,7 @@ export default function Donate() {
                                     Dober Technology Foundation
                                 </p>
                             </div>
-                            <p className={styles["text-center"]}>Сhoose Method</p>
+                            <p className={styles["text-center"]} style={{fontWeight: 600}}>Сhoose Method</p>
                             <div className={styles["donate_action_grid_bottom"]}>
                                 <div className={styles["item"]}>
                                     {/* <Image src={btc} alt="btc icon"/> */}

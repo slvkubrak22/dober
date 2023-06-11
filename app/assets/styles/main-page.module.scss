@@ -196,31 +196,7 @@
 
     &_text-center {
         text-align: center;
-    }
-
-    &_item-container {
-        display: flex;
-
-        &_item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            cursor: pointer;
-            margin: 50px;
-
-            &_logo-container {
-                width: 100px;
-                height: 100px;
-                background-color: #F3F3F4;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-    }
-
-    
+    } 
 }
 
 

@@ -7,6 +7,7 @@ import twitterLogo from "../assets/img/twitter-logo-color.svg";
 import linkedinLogo from "../assets/img/linkedin-logo.svg";
 
 import styles from "../assets/styles/main-page.module.scss";
+import SubscribeItems from "./SubscribeItems";
 
 
 export default function Subscribe() {
@@ -19,20 +20,7 @@ export default function Subscribe() {
                 <h2 className={styles["subscribe_text-center"]}>
                     {t('subscribe')}
                 </h2>
-                <div className={styles["subscribe_item-container"]}>
-                    <div className={styles["subscribe_item-container_item"]}>
-                        <div className={styles["subscribe_item-container_item_logo-container"]}>
-                            <Image src={twitterLogo} alt="Twitter logo link"/>
-                        </div>
-                        <h3>Twitter</h3>
-                    </div>
-                    <div className={styles["subscribe_item-container_item"]}>
-                        <div className={styles["subscribe_item-container_item_logo-container"]}>
-                            <Image src={linkedinLogo} alt="Linkedin logo link"/>
-                        </div>
-                        <h3>Linkedin</h3>
-                    </div>
-                </div>
+                <SubscribeItems />
             </div>
         </section>
     )
