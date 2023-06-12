@@ -26,7 +26,6 @@ export default function Download() {
  
   return (
     <>
-        <div style={{height: 100}}></div>
         <section className="container">
             <h2 style={{textAlign: 'center'}}>{t("download_page_title")}</h2>
             <div className={styles["download"]}>

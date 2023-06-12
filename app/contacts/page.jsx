@@ -13,7 +13,6 @@ export default function ContactUs() {
 
     return(
         <>
-            <div style={{height: 100}}></div>
             <section className="container">
                 <div className={styles["contacts-container"]}>
                     <div className="left">

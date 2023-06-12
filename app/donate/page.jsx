@@ -10,7 +10,6 @@ import btc from "../assets/img/donate/crypto.svg";
 export default function Donate() {
     return (
         <>
-            <div style={{height: 100}}></div>
             <section className="container">
                 <h2 className={styles["text-center"]}>Донать для добер</h2>
                 <div className={styles["donate_top"]}>

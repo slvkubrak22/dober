@@ -64,7 +64,7 @@ export default function Header() {
     };
     const onchangeBgColor = () => {
         if(scroll) {
-            return "#9c0fd5fa";
+            return "#2b282857";
         } else {
             return "transparent";
         }

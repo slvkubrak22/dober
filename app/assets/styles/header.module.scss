@@ -2,7 +2,6 @@
 
 .header {
     display: flex;
-    // color: $main-color-text1;
     align-items: center;
     justify-content: space-between;
     padding: 14px 0;
@@ -22,8 +21,6 @@
     &_select-lang {
         display: flex;
         align-items: center;
-        // cursor: pointer;
-        // position: relative;
         img {
             margin: 0 5px 0 10px;
         }
@@ -32,21 +29,6 @@
             display: block;
         }
     }
-
-    // &_drop-container {
-    //     position: relative;
-
-    //     .drop-menu-products {
-    //         top: 0;
-    //         left: 30px;
-    //         margin-top: 10px;
-    //     }
-
-    //     &:hover .drop-menu-products {
-    //         display: block;
-    //     }
-    // }
-
 }
 
 .menu-arrow {
@@ -60,18 +42,6 @@
     top: 40px;
     right: -20px;
 }
-
-// .drop-menu-wrapper {
-//     position: absolute; 
-//     background-color: $main-color-text2;
-//     padding: 20px;
-//     border-radius: 15px;
-//     display: none;
-
-//     & p:hover {
-//         color: red;
-//     }
-// }
 
 .container {
     margin: 0 auto;
@@ -114,13 +84,13 @@
     }
     &_wrapper {
         position: absolute; 
-        background-color: $main-color-text2;
+        background-color: $main-color-text1;
         padding: 20px;
         border-radius: 15px;
         display: none;
 
         p {
-            color: $main-color-text1;
+            color: $main-color-text2;
         }
 
         & p:hover {
