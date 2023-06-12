@@ -7,7 +7,7 @@
 }
 
 .top {
-    padding: 0  0 340px 0;
+    padding: 0  30px 340px 30px;
 
     &_title {
         font-size: 56px;
@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 30px;
     p {
         max-width: 500px;
         text-align: center;
@@ -54,5 +55,40 @@
             }
         }
     }
+}
 
+.principles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding: 0 30px;
+
+    &_text {
+        max-width: 40%;
+    }
+
+    &_images {
+        position: relative;
+        width: 40%;
+
+        // div {
+        //     width: 50px;
+        //     height: 200px;
+        // }
+
+        .image1,
+        .image2 {
+            position: absolute;
+           
+        }
+
+        .image1 {
+            bottom: 0;
+        }
+
+        .image2 {
+            top: 0;
+        }
+    }
 }

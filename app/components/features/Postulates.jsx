@@ -1,13 +1,17 @@
 import Image from "next/image";
+
 import img1 from "../../assets/img/features-page/security.svg";
 import img2 from "../../assets/img/features-page/anonymity.svg";
 import img3 from "../../assets/img/features-page/privacy.svg";
 import img4 from "../../assets/img/features-page/isolation.svg";
+import principles_img1 from "../../assets/img/features-page/principles-img-1.png"
+import principles_img2 from "../../assets/img/features-page/principles-img-2.png"
+import img5 from "../../assets/img/features-page/image.png"
 
 function GridItem({styles, img, title, text}) {
     return(
         <div className={styles["grid_item"]}>
-            <Image src={img}/>
+            <Image width={80} height={80} src={img}/>
             <p>{title}</p>
             <p>{text}</p>
         </div>
@@ -57,6 +61,26 @@ export default function Postulates({t, styles}) {
                             text={item.text}
                         />
                     )}
+                </div>
+            </div>
+            <div className={styles["principles"]}>
+                <div className={styles["principles_text"]}>
+                    <h2>ПРинцип роботи </h2>
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+                <div className={styles["principles_images"]}>
+                    {/* <div className="">
+                        <Image className={styles["image1"]} src={principles_img1}/>
+                    </div>
+                    <div className="">
+                        <Image className={styles["image2"]} src={principles_img2}/>
+                    </div>                     */}
+                    <Image style={{width: "100%", height: "105%"}} src={img5}/>
                 </div>
             </div>
         </section>

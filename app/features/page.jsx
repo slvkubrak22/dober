@@ -5,6 +5,7 @@ import TopSection from "../components/features/TopSection";
 
 import styles from "../assets/styles/features-page.module.scss";
 import Postulates from "../components/features/Postulates";
+import UseDober from "../components/UseDober";
 
 export default function Features() {
 
@@ -14,6 +15,7 @@ export default function Features() {
         <>
             <TopSection t={t} styles={styles}/>
             <Postulates t={t} styles={styles}/>
+            <UseDober />
         </>
     )    
 }
