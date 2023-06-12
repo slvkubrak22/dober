@@ -1,14 +1,15 @@
 {
     "home": "Home",
     "product": "Продукт",
-   "features": "Для компаний",
-    "security": "Security",
+   "features": "Возможности",
+    "security": "Безопасность",
     "companies": "Для компаний",
     "help": "Помощь",
     "donate": "Donate",
     "download": "Скачать",
     "language": "RU",
     "subscribe": "Социальные сети",
+    "contacts": "Contacts",
 
     "button_learn_more": "Подробнее", 
 

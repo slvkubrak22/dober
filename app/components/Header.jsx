@@ -14,6 +14,9 @@ import logo2 from "../assets/img/logo2.svg"
 import twitter_logo from '../assets/img/twitter-logo.png';
 import globe from '../assets/img/globe.png';
 import arrow from "../assets/img/header-arrow.svg";
+import arrow_black from "../assets/img/header-arrow-black.svg";
+import twitter_logo_black from "../assets/img/twitter-logo-black.svg";
+import globe_black from '../assets/img/globe-black.svg';
 
 import style from '../assets/styles/header.module.scss';
 
@@ -69,26 +72,30 @@ export default function Header() {
 
 
     return(
-        <header style={{backgroundColor: onchangeBgColor(), color: changeTextColor(), position: 'fixed', zIndex: 10, width: '100%', backdropFilter: onChangeBlur()}}>
+        <>
+            <header style={{backgroundColor: onchangeBgColor(), color: changeTextColor(), position: 'fixed', zIndex: 10, width: '100%', backdropFilter: onChangeBlur()}}>
             <div style={{padding: '0 30px'}}> 
                 <div className={style["header"] + ' ' + style["container"]}>
                     <Link href='/'>
                         <Image className="logo" src={pathname === "/" ? logo1 : logo2} alt="main Dober logo" />
                     </Link>
                     <ul className={style["header_list"]}>
-                        <li style={{position: 'relative'}} className="aaa">
-                            <Link href='/' className={style["header_item"]}>{t('product')}</Link>
-                            <Image className={style["menu-arrow"]} src={arrow} alt="menu arrow"/>
-                            <div className={style["drop-menu"]}>
-                                <p>{t('features')}</p>
-                                <p>{t('security')}</p>
+                        <li className={style["drop-menu_container"]} >
+                            <Link href='/' className={style["header_item"] + ' ' + style["header_select-product-items"]}>{t('product')}</Link>
+                            <Image className={style["menu-arrow"]} src={pathname === '/' ? arrow : arrow_black} alt="menu arrow"/>
+                            <div className={style["drop-menu-products"] + ' ' + style["drop-menu_wrapper"]}>
+                                <Link href='/features'>
+                                    <p>{t('features')}</p>
+                                </Link>
+                                <Link href='/security'>
+                                    <p>{t('security')}</p>
+                                </Link>
                             </div>
                         </li>
                         <li>
                             <Link href='./for_companies' className={style["header_item"]}>{t('companies')}</Link>
                         </li>
                         <li><Link href='./help' className={style["header_item"]}>{t('help')}</Link></li>
-                        <li><Link href='./contacts' className={style["header_item"]}>Contacts</Link></li>
                     </ul>
                     <div style={{display: 'flex', alignItems: 'center'}}>
                         <div className={style["header_buttons-container"]}>
@@ -99,12 +106,12 @@ export default function Header() {
                                 <button className={pathname === '/' ? style["button-white"] : style["button-black"]} >{t('download')}</button>
                             </Link>
                         </div>
-                        <Image className="logo" src={twitter_logo} alt="twitter logo"/>
-                        <div className={style["header_select-lang"]}>
-                            <Image src={globe} alt="change language icon"/>
+                        <Image className="logo" src={pathname === '/' ? twitter_logo : twitter_logo_black} alt="twitter logo"/>
+                        <div className={style["header_select-lang"] + ' ' + style["drop-menu_container"]}>
+                            <Image src={pathname === '/' ? globe : globe_black} alt="change language icon"/>
                             <p style={{marginTop: 18}}>{t('language')}</p>
-                            <Image className={style["menu-arrow"] + ' ' + style["menu-arrow-lang"]} src={arrow} alt="menu arrow" style={{right: -20, top: 22}}/>
-                            <div className={style["drop-menu"]}>
+                            <Image className={style["menu-arrow"] + ' ' + style["menu-arrow-lang"]} src={pathname === '/' ? arrow : arrow_black} alt="menu arrow" style={{right: -20, top: 22}}/>
+                            <div className={style["drop-menu_wrapper"] + ' ' + style["drop-menu-lang"]}>
                                 <p onClick={() => handleLanguageChange('ru')}>RU</p>
                                 <p onClick={() => handleLanguageChange('ua')}>UA</p>
                                 <p onClick={() => handleLanguageChange('en')}>EN</p>
@@ -113,6 +120,8 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-        </header>
+            </header>
+            <div style={{height: pathname === "/" ? 0 : 100}}></div>
+        </>    
     )
 }
