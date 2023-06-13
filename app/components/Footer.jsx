@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="container">
                 <div className={styles["footer_container"]}>
                     <Link href="/">
-                        <Image src={logo}></Image>
+                        <Image src={logo} alt="Logo image"></Image>
                     </Link>
                     <div className={styles["footer_link-container"]}>
                         <p className={styles["bold"]}>{t('product')}</p>
