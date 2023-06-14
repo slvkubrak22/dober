@@ -12,6 +12,15 @@
     max-width: 500px;
 }
 
+.button {
+    border: solid 1px;
+    margin: 0 5px;
+    &:hover {
+        background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
+        color: $main-color-text1;
+    }
+}
+
 .first-section {
     justify-content: space-between;
 
@@ -20,20 +29,6 @@
 
         div {
             margin-top: 32px;
-        }
-
-        .button-container {
-            align-items: center;
-
-            button {
-                border: solid 1px;
-                margin: 0 5px;
-
-                &:hover {
-                    background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
-                    color: $main-color-text1;
-                }
-            }
         }
     }
 
@@ -63,6 +58,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 10px;
+        cursor: pointer;
 
         &_item {
             padding: 34px 0;
@@ -71,11 +67,50 @@
             text-align: center;
         }
     }
+
+    &_content {
+        border-radius: 0 16px 16px 16px;
+        box-shadow: 0px 4px 40px 0px #04022A1A;
+        position: relative;
+        z-index: 2;
+        padding: 52px;
+        margin-top: 10px;
+
+        &_inner {
+           justify-content: space-between; 
+
+           h3 {
+            text-transform: uppercase;
+            font-size: 26px;
+           }
+        }
+    }
 }   
 
 .active_tab {
     background-color: #742AA7;
     color: $main-color-text1;
-    margin: 0 0 -20px;
+    margin: 0 0 -10px;
+    border-radius: 16px 16px 0 0;
 }
 
+.shield-container {
+    flex-direction: column;
+    align-items: center;
+
+    &_grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1.5fr;
+        column-gap: 20px;
+
+        &_item {
+            text-align: center;
+        }
+        
+        &_item-middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

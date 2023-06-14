@@ -11,8 +11,8 @@ export default function TabsComponent({ t, styles })  {
     const tabsData = [
       {
         tab: 'Privacy',
-        title: 'Tab 1',
-        text: 'Text for Tab 1',
+        title: 'Прийняті методи та концепціїї',
+        text: 'Постквантове наскрізне шифрування забезпечує конфіденційність ваших даних. Виділений сервер забезпечує впевненість у зберіганні та доступу до корпоративної інформації. Конфіденційність листування та розмов – право кожної вільної людини у світі.Використовуйте Dober і конфіденційність підвищиться.',
         image: tab_img_1,
       },
       {
@@ -48,13 +48,13 @@ export default function TabsComponent({ t, styles })  {
                     className={styles["tabs_container_buttons_item"] + ' ' + (activeTab === index ? styles["active_tab"] : '')}
                     onClick={() => handleTabClick(index)}
                     >
-                        {tab.title}
+                        {tab.tab}
                     </div>
                 ))}
             </div>
-            <div className="tab-content">
+            <div className={styles["tabs_container_content"]}>
                 {tabsData.map((tab, index) => (
-                    <div key={index} style={{ display: activeTab === index ? 'block' : 'none' }}>
+                    <div key={index} style={{ display: activeTab === index ? 'flex' : 'none' }} className={styles["tabs_container_content_inner"]}>
                         <div className='text-container'>
                             <h3>{tab.title}</h3>
                             <p>{tab.text}</p>
@@ -65,31 +65,6 @@ export default function TabsComponent({ t, styles })  {
                     </div>
                 ))}
             </div>
-            {/* <style jsx>{`
-            .tab-buttons {
-                display: flex;
-            }
-            
-            .tab-buttons button {
-                padding: 10px 20px;
-                background-color: #e9e9e9;
-                border: none;
-                cursor: pointer;
-            }
-            
-            .tab-buttons button.active {
-                background-color: #c4c4c4;
-            }
-            
-            .tab-content {
-                margin-top: 10px;
-            }
-            
-            .tab-content img {
-                max-width: 100%;
-                height: auto;
-            }
-            `}</style> */}
         </div>
     );
 };

@@ -8,9 +8,12 @@ import icon_1 from "../assets/img/for-companies/icon_1.svg";
 import icon_2 from "../assets/img/for-companies/icon_2.svg";
 import icon_3 from "../assets/img/for-companies/icon_3.svg";
 import devices from "../assets/img/for-companies/devices.png";
+import shield from "../assets/img/for-companies/shield.svg";
 
 import styles from "../assets/styles/for-companies.module.scss";
 import TabsComponent from "../components/Tabs";
+import UseDober from "../components/UseDober";
+import Subscribe from "../components/Subscribe";
 
 export default function ForCompanies() {
 
@@ -57,6 +60,33 @@ export default function ForCompanies() {
                 </p>
                 <TabsComponent t={t} styles={styles}/>
             </section>
+            <section className="container">
+                <div className={styles["flex"] + ' ' + styles["shield-container"]}>
+                    <h2>Безпека з dober</h2>
+                    <div className={styles["shield-container_grid"]}>
+                        <div className={styles["shield-container_grid_item"]}>
+                            <h3>Прийняті методи та концепціїї</h3>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit.
+                            </p>
+                        </div>
+                        <div className={styles["shield-container_grid_item-middle"]}>
+                            <div className="image-container">
+                                <Image src={shield}/>
+                            </div>
+                            <button className={styles["button"]}>Learn more</button>
+                        </div>
+                        <div className={styles["shield-container_grid_item"]}>
+                            <h3>Прийняті методи та концепціїї</h3>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <UseDober />
+            <Subscribe />
         </>
     )
 }
