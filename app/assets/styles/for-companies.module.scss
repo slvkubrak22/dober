@@ -1,0 +1,81 @@
+@import 'variables';
+
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.width {
+    max-width: 500px;
+}
+
+.first-section {
+    justify-content: space-between;
+
+    .text-container {
+        width: 30%;
+
+        div {
+            margin-top: 32px;
+        }
+
+        .button-container {
+            align-items: center;
+
+            button {
+                border: solid 1px;
+                margin: 0 5px;
+
+                &:hover {
+                    background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
+                    color: $main-color-text1;
+                }
+            }
+        }
+    }
+
+    .image-container {
+        width: 60%;
+
+        .devices-image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .icon-link-container {
+        align-items: center;
+        margin-top: 32px;
+
+        div {
+            margin: 0 10px 0 0;
+        }
+    }
+}
+
+.tabs_container {
+    margin-top: 46px;
+
+    &_buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+
+        &_item {
+            padding: 34px 0;
+            border-radius: 16px;
+            box-shadow: 0px 4px 40px 0px #04022A1A;
+            text-align: center;
+        }
+    }
+}   
+
+.active_tab {
+    background-color: #742AA7;
+    color: $main-color-text1;
+    margin: 0 0 -20px;
+}
+
