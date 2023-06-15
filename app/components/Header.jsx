@@ -43,7 +43,7 @@ export default function Header() {
 
     const [scroll, setScroll] = useState();
     const handleScroll = () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 0) {
             setScroll(true);
         } else {
             setScroll(false);

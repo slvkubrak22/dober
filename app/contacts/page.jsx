@@ -2,9 +2,8 @@
 
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
-import Image from "next/image";
 
-import styles from "../assets/styles/contacs.module.scss";
+import styles from "../assets/styles/contacts.module.scss";
 import SubscribeItems from "../components/SubscribeItems";
 
 export default function ContactUs() {

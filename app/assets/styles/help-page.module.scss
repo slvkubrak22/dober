@@ -16,6 +16,7 @@
 .faq-container {
     display: flex;
     flex-direction: column;
+    padding: 0 50px;
 }
 
 .faq-title {
@@ -84,5 +85,55 @@
     border-radius: 10px;
     background-color: #215AC1;
     transition: all 0.3s;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        button {
+            border-color: #215AC1;
+            color: #215AC1;
+            margin: 0 5px;
+            padding: 5px 10px;
+
+            &:hover {
+                background-color: #215AC1;
+                color: $main-color-text1;
+            }
+            &:active {}
+        }
+    }
+
+    .input-container {
+        position: relative;
+        margin-bottom: 20px;
+
+        img {
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+    }
+
+    input {
+        padding: 16px 20px;
+        border-radius: 50px;
+        border: solid 1px #04022A66;
+        font-size: 20px;
+
+        &:focus {
+            border: solid 1px #04022A66;
+            outline: none;
+        }
+    }
 }
 
