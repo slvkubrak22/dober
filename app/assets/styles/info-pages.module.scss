@@ -24,6 +24,7 @@
         list-style: none;
         margin: 25px 0;
         line-height: 30px;
+        position: relative;
     }
 
     & ol {
@@ -33,67 +34,11 @@
     & ol li:before {
         content: counters(item, ".")".";
         counter-increment: item;
-        margin-right: 10px;
+        margin-right: 100%;
+        position: absolute;
+        right: 10px;
     }
 }
 
-
-// .list {
-//     counter-reset: section;
-
-//     & ol {
-//         counter-reset: subsection;
-//     }
-// }
-  
-//   .list ol {
-//     counter-reset: subsection;
-//   }
-  
-//   .list ol ol {
-//     counter-reset: subsubsection;
-//   }
-  
-//   .list li:before {
-//     content: counters(section, ".") " ";
-//     counter-increment: section;
-//   }
-  
-//   .list ol li:before {
-//     content: counters(section, ".") " " counters(subsection, ".") " ";
-//     counter-increment: subsection;
-//   }
-  
-//   .list ol ol li:before {
-//     content: counters(section, ".") " " counters(subsection, ".") " " counters(subsubsection, ".") " ";
-//     counter-increment: subsubsection;
-// }
-
-// .list {
-//     counter-reset: section 1;
-//   }
-  
-//   .list ol {
-//     counter-reset: subsection 1;
-//   }
-  
-//   .list ol ol {
-//     counter-reset: subsubsection 0;
-//   }
-  
-//   .list li:before {
-//     content: counters(section, ".") " ";
-//     counter-increment: section;
-//   }
-  
-//   .list ol li:before {
-//     content: counters(section, ".") " " counters(subsection, ".") " ";
-//     counter-increment: subsection;
-//   }
-  
-//   .list ol ol li:before {
-//     content: counters(section, ".") " " counters(subsection, ".") " " counters(subsubsection, ".") " ";
-//     counter-increment: subsubsection;
-//   }
   
   

@@ -1,5 +1,5 @@
 
-export default function Navigation({styles}) {
+export default function Navigation({styles, blockRefs, scrollToRef}) {
 
     const titles = [
         "ЩО ТАКЕ DOBER",
@@ -26,7 +26,7 @@ export default function Navigation({styles}) {
         <div className={styles["navigation"]}>
             <ol>
                 {titles.map((title, key) => 
-                    <li key={key}> {title}</li>
+                    <li key={key} onClick={scrollToRef(blockRefs.current[key])}> {title}</li>
                 )}
             </ol>
         </div>
