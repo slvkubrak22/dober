@@ -61,7 +61,7 @@
         border: none;
         border-radius: 16px;
         position: relative;
-        padding: 32px;
+        padding: 20px;
         cursor: pointer;
         &.span-two {
             grid-row: span 2;
@@ -145,12 +145,10 @@
         border-radius: 20px 20px 0 0;
         padding-top: 28px;
     }
-    &_border-bottom {
-        border-radius: 0 0 20px 20px;
-    }
-    // &_shadow {
-    //     box-shadow: 1px 0 6px rgba(0, 0, 0, 0.5);
-    // }
+}
+
+.border-bottom {
+    border-radius: 0 0 20px 20px;
 }
 
 .justify {
@@ -175,6 +173,9 @@
     &_item:hover {
         background-image: linear-gradient(120deg, #215ac1, rgb(33 90 193 / 57%));
         transition: all linear 0.3s;
+    }
+    &_h3{
+        margin: 10px 0;
     }
     &_h3,
     &_p {

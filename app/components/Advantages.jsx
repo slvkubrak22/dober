@@ -18,6 +18,7 @@ function AdvantagesRow({
   signalItem,
   telegramItem,
   whatsappItem,
+  borderStyle
 }) {
   return (
     <>
@@ -26,7 +27,7 @@ function AdvantagesRow({
                 {description}
             </p>
         </div>
-        <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_bg-col"] + ' ' + styles["advantages_shadow"]}>
+        <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_bg-col"] + ' ' + styles["advantages_shadow"] + ' ' + borderStyle}>
             <Image src={doberItem} alt="Dober Item"/>
         </div>
         <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"]}>
@@ -55,88 +56,82 @@ export default function Advantages() {
       whatsappItem: checkmark,
     },
     {
-      description: "Відсутність збору особистих даних користувача з боку адміністрації месенджера",
+      description: t("main_page_advantages_text_2"),
       doberItem: checkmark,
       signalItem: checkmark,
       telegramItem: cross,
       whatsappItem: cross,
     },
     {
-      description: "Хешує персональну інформацію (номер, список контактів, тощо)",
+      description: t("main_page_advantages_text_3"),
       doberItem: checkmark,
       signalItem: cross,
       telegramItem: cross,
       whatsappItem: cross,
     },
     {
-      description: "Застосовуються надійні криптографічні алгоритми",
+      description: t("main_page_advantages_text_4"),
       doberItem: checkmark,
       signalItem: checkmark,
       telegramItem: checkmark,
       whatsappItem: checkmark,
     },
     {
-      description: "Зберігання даних користувача ",
+      description: t("main_page_advantages_text_5"),
       doberItem: cross,
       signalItem: checkmark,
-      telegramItem: cross,
-      whatsappItem: cross,
+      telegramItem: checkmark,
+      whatsappItem: checkmark,
     },
     {
-      description: "Захист листування від читання адміністрацією месенджера",
+      description: t("main_page_advantages_text_6"),
       doberItem: checkmark,
       signalItem: checkmark,
       telegramItem: checkmark,
       whatsappItem: checkmark,
     },
     {
-      description: "Вхід за PIN-кодом / парольною фразою",
+      description: t("main_page_advantages_text_7"),
       doberItem: checkmark,
       signalItem: checkmark,
       telegramItem: checkmark,
       whatsappItem: cross,
     },
     {
-      description: "Відсутність передачі особистих даних користувача державним органам безпеки",
+      description: t("main_page_advantages_text_8"),
       doberItem: checkmark,
       signalItem: checkmark,
       telegramItem: cross,
       whatsappItem: cross,
     },
     {
-      description: "Можливість анонімної реєстрації",
+      description: t("main_page_advantages_text_9"),
       doberItem: checkmark,
       signalItem: cross,
       telegramItem: cross,
       whatsappItem: cross,
     },
     {
-      description: "Можливість повного видалення облікового запису з системи",
+      description: t("main_page_advantages_text_10"),
       doberItem: checkmark,
       signalItem: cross,
       telegramItem: cross,
       whatsappItem: cross,
     },
     {
-      description: "Повідомлення учасників чату про зроблений скріншот листування",
+      description: t("main_page_advantages_text_11"),
       doberItem: checkmark,
       signalItem: cross,
       telegramItem: checkmark,
       whatsappItem: cross,
     },
     {
-      description: "Виділений сервер",
+      description: t("main_page_advantages_text_12"),
       doberItem: checkmark,
       signalItem: cross,
       telegramItem: cross,
       whatsappItem: cross,
-    },
-    {
-      description: "Чи рекомендується застосунок для безпечної передачі повідомлень",
-      doberItem: checkmark,
-      signalItem: checkmark,
-      telegramItem: cross,
-      whatsappItem: cross,
+      borderStyle: styles["border-bottom"],
     },
   ];
 
@@ -144,7 +139,7 @@ export default function Advantages() {
     <section style={{marginTop: 100}} className="container">
         <div className={styles["advantages"]}>
             <div>
-            <h2 style={{marginTop: 0}}>{t("main_page_advantages_title")}</h2>
+              <h2 style={{marginTop: 0}}>{t("main_page_advantages_title")}</h2>
             </div>
             <div className={styles["justify"] + ' ' + styles["advantages_bg-col"] + ' ' + styles["advantages_border-top"] + ' ' + styles["advantages_shadow"]}>
                 <Image src={doberLogo} alt="dober logo"/>
@@ -170,33 +165,9 @@ export default function Advantages() {
                 signalItem={item.signalItem}
                 telegramItem={item.telegramItem}
                 whatsappItem={item.whatsappItem}
+                borderStyle={item.borderStyle}
             />
             )}
-            <div className={styles["advantages_item"]}>
-                <p className={styles["advantages_item_text"]}>
-                    Головна причина чому застосунок не рекомендовано
-                </p>
-                <p className={styles["advantages_item_text"]}>
-                    securemessagingapps.com - источник
-                </p>
-            </div>
-            <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_bg-col"] + ' ' + styles["advantages_shadow"] + ' ' + styles["advantages_border-bottom"] }>
-            </div>
-            <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"] + ' ' + styles["advantages_border-bottom"] }>
-                <p className={styles["advantages_item_text"]} style={{textAlign: 'center', fontSize: 13, fontWeight: 400}}>
-                    Порада скасувати обов’язкову вимогу для користувачів реєструватися за допомогою мобільного номера
-                </p>
-            </div>
-            <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"] + ' ' + styles["advantages_border-bottom"] }>
-                <p className={styles["advantages_item_text"]} style={{textAlign: 'center', fontSize: 16, fontWeight: 400}}>
-                    Криптографія не за замовчуванням
-                </p>
-            </div>
-            <div className={styles["advantages_item"] + ' ' + styles["justify"] + ' ' + styles["advantages_shadow"] + ' ' + styles["advantages_border-bottom"] }>
-                <p className={styles["advantages_item_text"]} style={{textAlign: 'center', fontSize: 16, fontWeight: 400}}>
-                    Названий партнером АНБ у викриттях Сноудена 
-                </p>
-            </div>
         </div>
 
     </section>

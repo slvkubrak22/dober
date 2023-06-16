@@ -1,4 +1,4 @@
-.footer {
+.top-footer {
     background-color: #F3F3F4;
     padding: 80px 0;
     margin: 80px 0 0 0;
@@ -24,3 +24,32 @@
         font-size: 22px;
     }
 }
+
+.bottom-footer {
+    background-color: #1A293E;
+    padding: 20px 0;
+
+    &_container {
+        padding: 0 30px;
+
+        .left {
+            color: #FFFFFF66;
+            cursor: pointer;
+        }
+        .right {
+            color: #FFFFFFCC;
+            cursor: pointer;
+            
+            p {
+                margin-left: 26px;
+            }
+        }
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
