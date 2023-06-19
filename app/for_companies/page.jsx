@@ -37,10 +37,10 @@ export default function ForCompanies() {
                             </Link>
                         </div>
                         <div className={styles["flex"] + ' ' + styles["icon-link-container"]}>
-                            <div>
+                            <div className={styles["flex"]}>
                                 <Image alt="icon android" src={icon_1}/>
                             </div>
-                            <div>
+                            <div className={styles["flex"]}>
                                 <Image alt="icon web" src={icon_2}/>
                             </div>
                             <div>
@@ -74,7 +74,9 @@ export default function ForCompanies() {
                             <div className="image-container">
                                 <Image src={shield}/>
                             </div>
-                            <button className={styles["button"]}>Learn more</button>
+                            <Link href="/security">
+                                <button className={styles["button"]}>{t("button_learn_more")}</button>
+                            </Link>
                         </div>
                         <div className={styles["shield-container_grid_item"]}>
                             <h3>Прийняті методи та концепціїї</h3>

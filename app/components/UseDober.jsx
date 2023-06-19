@@ -39,7 +39,7 @@ export default function UseDober() {
                         <h2 className={styles["h2"]}>{t("use_dober_title")}</h2>
                         <p className={styles["text"]}>{t("use_dober_text")}</p>
                         <Link href="./download">
-                            <button>Download</button>
+                            <button>{t("download")}</button>
                         </Link>
                     </div>
                 </div>

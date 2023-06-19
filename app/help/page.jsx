@@ -45,7 +45,7 @@ export default function Help() {
                         <button
                             key={index}
                             className={styles["faq-button"]}
-                            onClick={() => scrollToBlock(index)}
+                            onClick={() => scrollToBlock((index + 5))}
                         >
                             {block.title}
                         </button>   

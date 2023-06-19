@@ -1,6 +1,7 @@
 "use client"
 
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 import Image from "next/image";
 import mobile1 from "../assets/img/mobile_1.png";
@@ -41,13 +42,11 @@ export default function FirstSection() {
               >
                 {t("main_page_first_section_left_text")}
               </p>
-              <button
-                className={
-                  styles["first-section_pos-end"] + " " + styles["button"]
-                }
-              >
-                {t("button_learn_more")}
-              </button>
+              <Link className={styles["first-section_pos-end"] + " " + styles["button"]} href={'/features'}>
+                <button>
+                  {t("button_learn_more")}
+                </button>
+              </Link>
             </div>
             <div className={styles["image-container"]} style={{marginRight: 5}}>
               <Image
@@ -72,13 +71,13 @@ export default function FirstSection() {
               <p className={styles["first-section_text-color"]}>
                 {t("main_page_first_section_right_text")}
               </p>
-              <button
-                className={
-                  styles["first-section_pos-start"] + " " + styles["first-section_button"]
-                }
-              >
-                {t("button_learn_more")}
-              </button>
+              <Link className={styles["first-section_pos-start"] + " " + styles["first-section_button"]} href='/for_companies'>
+                <button
+                  
+                >
+                  {t("button_learn_more")}
+                </button>
+              </Link>
             </div>
           </div>
         </div>

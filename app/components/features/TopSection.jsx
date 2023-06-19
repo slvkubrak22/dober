@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function TopSection ({t, styles}) {
     return(
         <section className={styles["bg-image"]}>
@@ -9,7 +11,7 @@ export default function TopSection ({t, styles}) {
                     <p className={styles["top_text"]}>
                         Виділений сервер забезпечує впевненість у зберіганні та доступу до корпоративної інформації. Конфіденційність листування та розмов – право кожної вільної людини у світі.Використовуйте Dober і конфіденційність підвищиться.
                     </p>
-                    <button>Learn More</button>
+                    <Link href="/security"><button>{t("button_learn_more")}</button></Link>
                 </div>
             </div>
         </section>

@@ -81,6 +81,10 @@
         &:hover .menu-arrow {
             rotate: 180deg;
         }
+
+        .drop-menu-products {
+            right: 7px;
+        }
     }
     &_wrapper {
         position: absolute; 
@@ -94,7 +98,7 @@
         }
 
         & p:hover {
-            color:red;
+            color:#04022861;
         }
     }
 }

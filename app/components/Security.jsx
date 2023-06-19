@@ -1,6 +1,7 @@
 "use client"
 
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 import Image from "next/image";
 import styles from '../assets/styles/main-page.module.scss';
@@ -25,7 +26,9 @@ export default function Security() {
           <p>
             {t("main_page_security_text_par_3")}
           </p>
-          <button className={styles["security_button"]}>{t("button_learn_more")}</button>
+          <Link href="/security" >
+            <button className={styles["security_button"]}>{t("button_learn_more")}</button>
+          </Link>
         </div>
         <Image src={image} alt="security image" />
       </div>

@@ -55,8 +55,14 @@
 }
 
 .button {
-    background: $bg-color-1;
-    color: $main-color-text1;
+    color: $main-color-text2;
+   border: 1px solid $main-color-text2;
     align-self: baseline;
     padding: 18px 100px;
+
+    &:hover {
+        background: $bg-color-1;
+        color: $main-color-text1;
+        border-color: $main-color-text1;
+    }
 }

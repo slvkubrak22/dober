@@ -134,9 +134,16 @@
     }
 
     &_button {
-        color: $main-color-text1;
-        background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
 
+        color: $main-color-text2;
+        border: 1px solid $main-color-text2;
+
+        &:hover {
+            color: $main-color-text1;
+            background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
+            border-color: $main-color-text1;
+        }
+        
     }
 }
 

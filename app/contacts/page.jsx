@@ -51,7 +51,7 @@ export default function ContactUs() {
                         </div>
                         <div className={styles["send-info_item"]}>
                             <label htmlFor="comment">Ваш коментар</label>
-                            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+                            <textarea name="comment" id="comment" cols="30" rows="5" maxLength="300"></textarea>
                         </div>
                         <button type="submit" className={styles["button"]}>Надіслати</button>
                     </div>
