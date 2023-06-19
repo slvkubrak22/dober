@@ -36,4 +36,12 @@
     max-width: 754px;
     color: $main-color-text1;
     // margin-top: 0;
+
+    @media (max-width: 1200px) {
+        font-size: 22px;
+    }
+}
+
+.text {
+    color: $main-color-text1;
 }

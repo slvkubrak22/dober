@@ -35,7 +35,9 @@
     "main_page_possibilities_feature_6_text": "Multi-level encryption of calls and messages for added security. Trusted connection between servers. Secure push notifications that allow you to display the message without compromising security and without transmitting metadata.",
 
     "main_page_security_title": "Security or Secure",
-    "main_page_security_text": "Your account is not linked to mobile phone number or email address and is completely anonymous. Your communication in the application is protected from unauthorized third-party access. We do not transfer users personal data to third-party companies or government agencies. The application does not store your personal data and encrypts your personal information, such as IP address or contacts list. We guarantee secure data storage. Additional security features, such as notifying chat participants of a screenshot taken, which cannot be disabled.", 
+    "main_page_security_text_par_1": "Your account is not linked to mobile phone number or email address and is completely anonymous. Your communication in the application is protected from unauthorized third-party access. We do not transfer users personal data to third-party companies or government agencies.", 
+    "main_page_security_text_par_2": "The application does not store your personal data and encrypts your personal information, such as IP address or contacts list. We guarantee secure data storage.",
+    "main_page_security_text_par_3": "Additional security features, such as notifying chat participants of a screenshot taken, which cannot be disabled.",
 
     "main_page_advantages_title": "Our benefits",
     "main_page_advantages_text_1": "End-to-end encryption enabled by default",

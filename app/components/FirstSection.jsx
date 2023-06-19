@@ -49,18 +49,22 @@ export default function FirstSection() {
                 {t("button_learn_more")}
               </button>
             </div>
-            <Image
-              width={300}
-              src={mobile1}
-              alt="mobile screen example"
-            />
+            <div className={styles["image-container"]} style={{marginRight: 5}}>
+              <Image
+                // width={300}
+                src={mobile1}
+                alt="mobile screen example"
+              />
+            </div>
           </div>
           <div className={styles["first-section_subitem"]}>
-            <Image
-              width={300}
-              src={mobile2}
-              alt="mobile screen example"
-            />
+            <div className={styles["image-container"]} style={{marginLeft: 5}}>
+              <Image
+                // width={300}
+                src={mobile2}
+                alt="mobile screen example"
+              />
+            </div>
             <div className={styles["first-section_description"]}>
               <h2 className={styles["first-section_text-color"]}>
                 {t("main_page_first_section_right_title")}

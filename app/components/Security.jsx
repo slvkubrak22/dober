@@ -17,7 +17,13 @@ export default function Security() {
         <div className={styles["security_text"]}>
           <h2>{t("main_page_security_title")}</h2>
           <p>
-            {t("main_page_security_text")}
+            {t("main_page_security_text_par_1")}
+          </p>
+          <p>
+            {t("main_page_security_text_par_2")}
+          </p>
+          <p>
+            {t("main_page_security_text_par_3")}
           </p>
           <button className={styles["security_button"]}>{t("button_learn_more")}</button>
         </div>

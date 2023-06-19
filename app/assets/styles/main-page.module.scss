@@ -8,9 +8,19 @@
         align-items: center;
         width: 50%;
 
-        & img {
+        .image-container {
+            width: 300px;
             align-self: end;
+            margin-bottom: -4px;
+
+            img {
+                align-self: end;
+                width: 100%;
+                height: 100%;
+            }
         }
+
+        
     }
 
     &_description {
@@ -42,6 +52,10 @@
 
     &_button {
         margin-bottom: 20px;
+    }
+
+    p {
+        font-weight: 100;
     }
 }
 
@@ -87,6 +101,10 @@
     &_p {
         color: $main-color-text1;
     }
+
+    &_p {
+        font-weight: 100;
+    }
     
     &_arrow {
         position: absolute;
@@ -129,7 +147,7 @@
     padding: 0 30px;
 
     &_item {
-        padding: 28px;
+        // padding: 28px;
         text-align: start;
         border-top: 1px solid #31313126;
 

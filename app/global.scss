@@ -285,11 +285,18 @@ h2 {
 }
 
 p {
-    letter-spacing: 2px;
+    
     line-height: 20px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .small-text {
     font-size: $small-text;
     color:#215AC1;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
 }
