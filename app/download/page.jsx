@@ -66,7 +66,7 @@ export default function Download() {
                     </div>
                 </div>
                 <div className={styles["download_items"]}>
-                    <p className={styles["download_items_title"]}> Mobile app</p>
+                    <p className={styles["download_items_title"]}> Web app</p>
                     <div className={styles["item"]}>
                         <div className={styles["item_image-container"]}>
                             <div>

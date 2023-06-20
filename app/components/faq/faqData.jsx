@@ -1,6 +1,6 @@
 export const faqData = [
     {
-        title: "General",
+        title: t("title"),
         faqs: [
             {
             question: "Question 1",

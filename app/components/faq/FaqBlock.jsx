@@ -1,6 +1,6 @@
 import FaqItem from "./FaqItem";
 
-export default function FaqBlock ({ title, faqs, styles, blockRef }) {
+export default function FaqBlock ({ title, faqs, styles, blockRef, t }) {
 
     return (
         <div ref={blockRef}>
