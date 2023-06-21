@@ -102,7 +102,6 @@ export default function Help() {
                         <li>{t("help_page_answer_16_3")}</li>
                         <li>{t("help_page_answer_16_4")}</li>
                         <li>{t("help_page_answer_16_5")}</li>
-                        <li>{t("help_page_answer_16_6")}</li>
                     </ul>
                 },
                 {
