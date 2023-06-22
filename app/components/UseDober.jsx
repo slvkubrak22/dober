@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import Image from "next/image";
 
-import img1 from "../assets/img/apple.png";
-import img2 from "../assets/img/android.png";
-import img3 from "../assets/img/web.png";
+import img1 from "../assets/img/apple.svg";
+import img2 from "../assets/img/android.svg";
+import img3 from "../assets/img/web.svg";
 
 
 import styles from "../assets/styles/use-dober.module.scss"

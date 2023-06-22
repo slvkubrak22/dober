@@ -11,6 +11,7 @@ import styles from "../assets/styles/download-page.module.scss";
 import img1 from "../assets/img/download/mobile_1.png";
 import img2 from "../assets/img/download/mobile_2.png";
 import ios from "../assets/img/download/ios.svg";
+import android from "../assets/img/download/android.svg"
 import arrow from "../assets/img/download/arrow.svg";
 import screen from "../assets/img/download/screen.png";
 
@@ -57,7 +58,7 @@ export default function Download() {
                         <div className={styles["item_link"]}>
                             <div className={styles["center"]}>
                                 <div>
-                                    <Image src={ios} alt="android logo"></Image>
+                                    <Image src={android} alt="android logo"></Image>
                                 </div>
                                 <p>Google Play</p>
                             </div>

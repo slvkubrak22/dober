@@ -5,12 +5,12 @@ import Image from "next/image";
 
 import styles from "../assets/styles/main-page.module.scss";
 
-import checkmark from "../assets/img/checkmark.png";
-import cross from "../assets/img/cross.png";
-import doberLogo from "../assets/img/dober-logo.png";
-import signalLogo from "../assets/img/signal-logo.png";
-import telegramLogo from "../assets/img/telegram-logo.png";
-import whatsAppLogo from "../assets/img/whatsApp-logo.png";
+import checkmark from "../assets/img/checkmark.svg";
+import cross from "../assets/img/cross-red.svg";
+import doberLogo from "../assets/img/dober-logo.svg";
+import signalLogo from "../assets/img/signal-logo.svg";
+import telegramLogo from "../assets/img/telegram-logo.svg";
+import whatsAppLogo from "../assets/img/whatsApp-logo.svg";
 
 function AdvantagesRow({
   description,

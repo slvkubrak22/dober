@@ -9,10 +9,10 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import logo1 from '../assets/img/logo.png';
+import logo1 from '../assets/img/logo.svg';
 import logo2 from "../assets/img/logo2.svg"
-import twitter_logo from '../assets/img/twitter-logo.png';
-import globe from '../assets/img/globe.png';
+import twitter_logo from '../assets/img/twitter-logo-header.svg';
+import globe from '../assets/img/globe.svg';
 import arrow from "../assets/img/header-arrow.svg";
 import arrow_black from "../assets/img/header-arrow-black.svg";
 import twitter_logo_black from "../assets/img/twitter-logo-black.svg";
