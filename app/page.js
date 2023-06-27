@@ -1,4 +1,6 @@
 
+import Link from "next/link";
+
 import Advantages from "./components/Advantages";
 import FirstSection from "./components/FirstSection";
 import InfoForCompanies from "./components/InfoForCompanies";
@@ -16,11 +18,15 @@ export default function Home() {
   return (
     <>
       <FirstSection />
-      <Possibilities />
+      <Link href='/features'>
+        <Possibilities />
+      </Link>
       <Security />
       <Advantages />
       <UseDober />
-      <InfoForCompanies />
+      <Link href='/for_companies'> 
+        <InfoForCompanies />
+      </Link>
       <Subscribe />
     </>
   );

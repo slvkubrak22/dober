@@ -23,6 +23,7 @@
 
 .first-section {
     justify-content: space-between;
+    padding: 0 30px;
 
     .text-container {
         width: 30%;
@@ -53,6 +54,7 @@
 
 .tabs_container {
     margin-top: 46px;
+    padding: 0 30px;
 
     &_buttons {
         display: grid;
@@ -101,6 +103,7 @@
 .shield-container {
     flex-direction: column;
     align-items: center;
+    padding: 0 30px;
 
     &_grid {
         display: grid;

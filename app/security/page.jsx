@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 
 import Image from "next/image";
 import img_1 from "../assets/img/security/img_1.svg";
@@ -15,6 +18,26 @@ import styles from "../assets/styles/security-page.module.scss";
 import Subscribe from "../components/Subscribe";
 
 export default function Security() {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const openModal = (image) => {
+        setSelectedImage(image);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage(null);
+        setIsModalOpen(false);
+    };
+
+    const handleImageClick = (image) => {
+        if (!isModalOpen) {
+          openModal(image);
+        }
+      };
+
     return (
         <>
             <section className="container">
@@ -88,12 +111,19 @@ export default function Security() {
                 </h2>
                 <div className={styles["control-container"]}>
                     <div className={styles["image-container"]}>
-                        <Image src={control_1}/>
+                        <Image src={control_1} onClick={() => handleImageClick(control_1)}/>
                     </div>
                     <div className={styles["image-container"]}>
-                        <Image src={control_2}/>
+                        <Image src={control_2} onClick={() => handleImageClick(control_2)}/>
                     </div>
                 </div>
+                {isModalOpen && (
+                    <div className={styles["modal-overlay"]} onClick={closeModal}>
+                        <div className={styles["modal-content"]}>
+                            <Image src={selectedImage} alt="Selected Image" />
+                        </div>
+                    </div>
+                )}
             </section>
             <Subscribe />
         </>
