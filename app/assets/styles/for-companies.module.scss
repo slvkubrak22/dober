@@ -79,6 +79,10 @@
         &_inner {
            justify-content: space-between; 
 
+           &_text-container {
+            width: 40%;
+           }
+
            h3 {
             text-transform: uppercase;
             font-size: 26px;

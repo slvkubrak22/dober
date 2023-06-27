@@ -106,7 +106,9 @@ export default function Header() {
                                 <button className={pathname === '/' || pathname === "/features" ? style["button-white"] : style["button-black"]} >{t('download')}</button>
                             </Link>
                         </div>
-                        <Image className="logo" src={pathname === '/' || pathname === "/features" ? twitter_logo : twitter_logo_black} alt="twitter logo"/>
+                        <Link href='https://twitter.com/dober_chat'>
+                            <Image className="logo" src={pathname === '/' || pathname === "/features" ? twitter_logo : twitter_logo_black} alt="twitter logo"/>
+                        </Link>
                         <div className={style["header_select-lang"] + ' ' + style["drop-menu_container"]}>
                             <Image src={pathname === '/' || pathname === "/features" ? globe : globe_black} alt="change language icon"/>
                             <p style={{marginTop: 18}}>{t('language')}</p>

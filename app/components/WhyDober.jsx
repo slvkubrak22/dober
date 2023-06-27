@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 import styles from "../assets/styles/why-dober.module.scss";
 
@@ -22,7 +23,9 @@ export default function WhyDober() {
                     <div className={styles["text-container"]}>
                         <h3>Чому Dober ?</h3>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        <button>{t("button_learn_more")}</button>
+                        <Link href='/features'>
+                            <button>{t("button_learn_more")}</button>
+                        </Link>
                     </div>
                 </div>
             </div>

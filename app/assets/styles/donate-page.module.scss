@@ -3,182 +3,63 @@
 .text-center {
     text-align: center;
 }
-.small-text {
-    font-size: $small-text;
-    color:#215AC1;
-    margin: 0 0 60px 0;
-}
-.donate_top {
-    border-bottom: solid 1px #215AC16E;
-    padding: 0 0 60px 0;
-    margin: 0 0 50px 0;
-}
 
-.donate_container {
+.donate-container {
     display: flex;
-    justify-content: center;
-}
-
-.donate_action {
-    border-radius: 16px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 4px 40px 0px #04022A26;
-    margin: 0 80px 0 0;
-    min-width: 320px;
-
-    &_top {
-        background: $bg-color-1;
-        height: 80px;
+    padding: 0 30px;
+    
+    .border {
+        border-right: solid 1px #215AC13B;
+        padding-right: 20px;
     }
 
-    .toggle-container {
-        display: flex;
-        align-items: center;
-        border-radius: 16px;
-        border: 1px solid #04022A33; 
-        overflow: hidden;
-        cursor: pointer;
-        align-self: center;
-        margin: 20px 0;       
+    .padding {
+        padding-left: 20px;
+    }
 
-        & div {
-            padding: 10px;
+    &_item {
+        width: 50%;
+
+        h3 {
+            margin-top: 0;
         }
 
-        .left {
-            // background:$bg-color-1;
-            // color: $main-color-text1;
-        }
-
-        .right {
-            padding: 10px 15px;
-        }
-        
-        .left:hover,
-        .right:hover {
-            background: $bg-color-1;
-            color: $main-color-text1;
-            transition: all 0.3s;
-            border-color: #fff;
+        h4 {
+            font-size: 18px;
+            font-weight: 400;
         }
     }
 
-    & select {
-        border: none;
-        border-bottom: 1px solid #04022A33;
-        width: 100%;
-        cursor: pointer;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 10px;
-        row-gap: 10px;
-        padding: 20px 20px 0;
-
-        & div {
-            border-radius: 8px;
-            border: solid 1px #04022A33;
-            text-align: center;
-            cursor: pointer;
-            padding: 20px;
-
-            &:hover {
-                background: $bg-color-1;
-                transition: all 0.3s;
-                color: $main-color-text1;
-                border-color: #FFF;
-            }
-        }
-
-        & sup {
-            margin: 0 6px
-        }
-    }
-    .item {
-        border-radius: 8px;
-        border: solid 1px #04022A33;
-        text-align: center;
-        cursor: pointer;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        & img {
-            margin: 0 10px;
-            filter: red;
-        }
-
-        & p{
-            margin: 0;
-            font-size: 14px;
-        }
-
-        & svg {
-            margin: 0 10px;
-        }
-        & svg path {
-            fill: #04022A;
-        }
+    button {
+        color: $main-color-text2;
+        border: 1px solid $main-color-text2;
 
         &:hover {
-            background: $bg-color-1;
-            transition: all 0.3s;
             color: $main-color-text1;
-            border-color: #FFF;
+            background: $bg-color-1;
+            border-color: $main-color-text1;
         }
 
-        &:hover svg path {
-            fill: #FFF;
-        }
+
     }
 }
 
-.button {
+.crypto-info {
     width: 100%;
-    color: $main-color-text2;
-    border: 1px solid $main-color-text2;
+    margin: 16px 0;
 
-    &:hover {
-        background: $bg-color-1;
-        color: $main-color-text1;
-        border-color: $main-color-text1;
+    &_item {
+        display: flex;
+        align-items: center;
+        word-break: break-all;
+
+        p {
+            margin: 0 10px;
+        }
+
+        .code {
+            margin: 10px 5px;
+            cursor: pointer;
+        }
     }
 }
-
-.donate_text {
-    max-width: 640px;
-}
-
-
-
-.donate_action_bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    & p {
-        max-width: 188px;
-        color: $main-color-text1
-    }
-}
-
-.donate_action_grid_bottom {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    padding: 0 20px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-}
-
