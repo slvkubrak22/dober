@@ -14,7 +14,7 @@
 
 .button {
     border: solid 1px;
-    margin: 0 5px;
+    margin: 0 10px 0 0;
     &:hover {
         background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
         color: $main-color-text1;
@@ -49,14 +49,14 @@
         div {
             margin: 0 10px 0 0;
 
-            &:hover .svg-color{
-                fill: #04022A;
-                stroke: #04022A;
-            }
+            // &:hover .svg-color{
+            //     fill: #04022A;
+            //     stroke: #04022A;
+            // }
 
             .svg-color {
-                fill: #04022a38;
-                stroke: #04022a38;
+                fill: #04022A;
+                stroke: #04022A;
             }
         }
     }
