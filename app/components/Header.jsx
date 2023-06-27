@@ -3,7 +3,6 @@
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
-// import { NextConfig } from 'next';
 import { useState, useEffect } from "react";
 
 import Link from "next/link";
@@ -31,7 +30,6 @@ export default function Header() {
 
     const router = useRouter();
     const pathname = usePathname();
-    console.log(pathname);
     const changeTextColor = () => {
         if(pathname === "/" || pathname === "/features") {
            return "#FFF";
@@ -88,7 +86,7 @@ export default function Header() {
                                     <p>{t('features')}</p>
                                 </Link>
                                 <Link href='/security'>
-                                    <p>{t('security')}</p>
+                                    <p style={{marginBottom: 0}}>{t('security')}</p>
                                 </Link>
                             </div>
                         </li>
@@ -111,12 +109,14 @@ export default function Header() {
                         </Link>
                         <div className={style["header_select-lang"] + ' ' + style["drop-menu_container"]}>
                             <Image src={pathname === '/' || pathname === "/features" ? globe : globe_black} alt="change language icon"/>
-                            <p style={{marginTop: 18}}>{t('language')}</p>
-                            <Image className={style["menu-arrow"] + ' ' + style["menu-arrow-lang"]} src={pathname === '/' || pathname === "/features" ? arrow : arrow_black} alt="menu arrow" style={{right: -20, top: 22}}/>
+                            <div>
+                                <p style={{marginTop: 18}}>{t('language')}</p>
+                                <Image className={style["menu-arrow"] + ' ' + style["menu-arrow-lang"]} src={pathname === '/' || pathname === "/features" ? arrow : arrow_black} alt="menu arrow" style={{right: -20, top: 22}}/>
+                            </div>
                             <div className={style["drop-menu_wrapper"] + ' ' + style["drop-menu-lang"]}>
                                 <p onClick={() => handleLanguageChange('ru')}>RU</p>
                                 <p onClick={() => handleLanguageChange('ua')}>UA</p>
-                                <p onClick={() => handleLanguageChange('en')}>EN</p>
+                                <p style={{marginBottom: 0}} onClick={() => handleLanguageChange('en')}>EN</p>
                             </div>
                         </div>
                     </div>

@@ -78,7 +78,7 @@ export default function Advantages() {
     },
     {
       description: t("main_page_advantages_text_5"),
-      doberItem: cross,
+      doberItem: checkmark,
       signalItem: checkmark,
       telegramItem: checkmark,
       whatsappItem: checkmark,

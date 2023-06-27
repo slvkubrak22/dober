@@ -43,11 +43,21 @@
     }
     
     .icon-link-container {
-        align-items: center;
+        // align-items: center;
         margin-top: 32px;
 
         div {
             margin: 0 10px 0 0;
+
+            &:hover .svg-color{
+                fill: #04022A;
+                stroke: #04022A;
+            }
+
+            .svg-color {
+                fill: #04022a38;
+                stroke: #04022a38;
+            }
         }
     }
 }
