@@ -28,40 +28,42 @@ export default function Features() {
             <section className="container">
                 <div className={styles["grid-bottom"]}>
                     <div>
-                        <h2>Підходить для таких компаній</h2>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <h2>{t("features_page_for_companies_title")}</h2>
+                        <p>{t("features_page_for_companies_text")}</p>
                     </div>
                     <div className={styles["grid-bottom_item"]}>
                         <Image src={grid_bottom_item_img_1} alt="info icon"/>
-                        <h3>Фінансові установи</h3>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <h3>
+                            {t("features_page_for_companies_title_item_1")}
+                        </h3>
+                        <p>{t("features_page_for_companies_text_item_1")}</p>
                     </div>
                     <div className={styles["grid-bottom_item"]}>
                         <Image src={grid_bottom_item_img_2} alt="info icon"/>
-                        <h3>Юридичні установи</h3>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                        <h3>{t("features_page_for_companies_title_item_2")}</h3>
+                        <p>{t("features_page_for_companies_text_item_2")}</p>
                     </div>
                 </div>
                 <div className={styles["grid-bottom"] + ' ' + styles["grid-bottom-2"]}>
                     <div className={styles["grid-bottom_item"]}>
                         <Image src={grid_bottom_item_img_3} alt="info icon"/>
-                        <h3>Секретні огранізації</h3>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                        <h3>{t("features_page_for_companies_title_item_3")}</h3>
+                        <p>{t("features_page_for_companies_text_item_3")} </p>
                     </div>
                     <div className={styles["grid-bottom_item"]}>
                         <Image src={grid_bottom_item_img_4} alt="info icon"/>
-                        <h3>Дистриб’ютори</h3>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                        <h3>{t("features_page_for_companies_title_item_4")}</h3>
+                        <p>{t("features_page_for_companies_text_item_4")} </p>
                     </div>
                     <div className={styles["grid-bottom_item"]}>
                         <Image src={grid_bottom_item_img_5} alt="info icon"/>
-                        <h3>Виробництва</h3>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                        <h3>{t("features_page_for_companies_title_item_5")}</h3>
+                        <p>{t("features_page_for_companies_text_item_5")} </p>
                     </div>
                     <div className={styles["grid-bottom_item"]}>
                         <Image src={grid_bottom_item_img_6} alt="info icon"/>
-                        <h3>Громадські огранізації</h3>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                        <h3>{t("features_page_for_companies_title_item_6")}</h3>
+                        <p>{t("features_page_for_companies_text_item_6")} </p>
                     </div>
                 </div>
             </section>

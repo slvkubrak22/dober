@@ -21,8 +21,8 @@ export default function WhyDober() {
                         <Image src={img} alt="dober image"></Image>
                     </div>
                     <div className={styles["text-container"]}>
-                        <h3>Чому Dober ?</h3>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <h3>{t("why_dober_title")}</h3>
+                        <p>{t("why_dober_text")}</p>
                         <Link href='/features'>
                             <button>{t("button_learn_more")}</button>
                         </Link>

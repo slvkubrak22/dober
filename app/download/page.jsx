@@ -36,19 +36,9 @@ export default function Download() {
                     <p className={styles["download_items_title"]}>Mobile app</p>
                     <div className={styles["item"]}>
                         <div className={styles["item_image-container"]}>
-                            {/* <div>
-                                <div className={styles["inside-img"]}>
-                                    <div className="item_image">
-                                        <Image src={img1} alt="example dober app"></Image>
-                                    </div>
-                                    <div className={styles["img-absolute"]}>
-                                        <Image className="arrow" src={img2} alt="example dober app"></Image>
-                                    </div>
-                                </div>
-                            </div> */}
                             <Image style={{width: '50%', height: '100%'}} src={new1}></Image>
                         </div>
-                        <p >Завантажуйте мобільні версії месенджеру Dober та будьте впевнені в конфіденційності розмов </p>
+                        <p>{t("download_page_item_1")}</p>
                         <Link target="_blank" href='https://apps.apple.com/in/app/dober-%20public/id1658387713'>
                             <div className={styles["item_link"]}>
                                 <div className={styles["center"]}>
@@ -81,7 +71,7 @@ export default function Download() {
                                 <Image style={{width: '100%', height: '100%'}} src={new2} alt="example web app"></Image>
                             {/* </div> */}
                         </div>
-                        <p >Завантажуйте мобільні версії месенджеру Dober та будьте впевнені в конфіденційності розмов </p>
+                        <p >{t("download_page_item_2")}</p>
                         <button className={styles["button"]}>
                             <Link target="_blank" href='https://dober.me/web/index.html' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                                 <div>
@@ -100,7 +90,7 @@ export default function Download() {
                                 <Image style={{width: '84%', height: '100%'}} src={new3} alt="example web app"></Image>
                             {/* </div> */}
                         </div>
-                        <p >Завантажуйте мобільні версії месенджеру Dober та будьте впевнені в конфіденційності розмов</p>
+                        <p >{t("download_page_item_3")}</p>
                         <button style={{margin: "60px 0 20px 0"}} className={styles["button"]}>
                             <Link target="_blank" href='https://apps.apple.com/in/app/dober-business/id1659640166' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                                 <div>

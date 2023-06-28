@@ -8,21 +8,24 @@ import styles from "../assets/styles/donate-page.module.scss";
 import DonateCryptoInfo from "../components/DonateCryptoInfo";
 
 export default function Donate() {
+
+    const { t } = useTranslation();
+
     return (
         <>
             <section className="container">
-                <h2 className={styles["text-center"]}>Донать для добер</h2>
+                <h2 className={styles["text-center"]}>{t("donate_page_title")}</h2>
                 <div className={styles["donate-container"]}>
                     <div className={styles["donate-container_item"] + ' ' + styles["border"]}>
-                        <h3>Donate CRYPTO</h3>
-                        <p>Донати в криптовалюті приймаються напряму на відповідні гаманці Dober абсолютно анонімно. Якщо ви бажаєте підтримати проєкт криптовалютою, якої немає у списку, напишіть нам на електронну адресу support@dober.chat </p>
+                        <h3>{t("donate_page_subtitle_1")}</h3>
+                        <p>{t("donate_page_text_1")}</p>
                         <h4>Сhoose Method</h4>
-                        <DonateCryptoInfo styles={styles}/>
+                        <DonateCryptoInfo styles={styles} t={t}/>
                     </div>
                     <div className={styles["donate-container_item"] + ' ' + styles["padding"] }>
-                        <h3>Donate Money</h3>
+                        <h3>{t("donate_page_subtitle_2")}</h3>
                         <p>
-                            Ваші донати допомагають нам розробляти Dober, впроваджувати нові функції безпеки та анонімності, підтримувати роботу серверів. Стимулюють нас працювати та дають віру в те, що ми на правильному шляху.
+                            {t("donate_page_text_2")}
                         </p>
                         <Link href='https://secure.wayforpay.com/donate/dober' target="_blank">
                             <button>Donate</button>

@@ -4,52 +4,49 @@ import img1 from "../../assets/img/features-page/security.svg";
 import img2 from "../../assets/img/features-page/anonymity.svg";
 import img3 from "../../assets/img/features-page/privacy.svg";
 import img4 from "../../assets/img/features-page/isolation.svg";
-import principles_img1 from "../../assets/img/features-page/principles-img-1.png"
-import principles_img2 from "../../assets/img/features-page/principles-img-2.png"
-import img5 from "../../assets/img/features-page/image.png"
+import img5 from "../../assets/img/features-page/image.svg"
 
 function GridItem({styles, img, title, text}) {
     return(
         <div className={styles["grid_item"]}>
             <Image width={80} height={80} src={img}/>
-            <p>{title}</p>
+            <p style={{fontWeight: 600, fontSize: 20}}>{title}</p>
             <p>{text}</p>
         </div>
     )
 }
-
 
 export default function Postulates({t, styles}) {
 
     const gridItemData = [
         {
             img: img1,
-            title: 'Безпека',
-            text: 'Застосунок захищено від несанкціованого доступу, впроваджено наскрізне шифрування, гарантовано безпечне зберігання даних',
+            title: t("features_page_postulates_title_item_1"),
+            text: t("features_page_postulates_text_item_1"),
         },
         {
             img: img2,
-            title: 'Анонімність',
-            text: 'Відсутність прив’язок до номеру телефону чи електронної пошти, персональної інформації про користувача не збирається'
+            title: t("features_page_postulates_title_item_2"),
+            text: t("features_page_postulates_text_item_2")
         },
         {
             img: img3,
-            title: 'Конфіденційність',
-            text: 'Інформація, яка циркулює та зберігається у системі доступна лише відправнику та отримувачу. Цифровий підпис запобігає підміні особистості'
+            title: t("features_page_postulates_title_item_3"),
+            text: t("features_page_postulates_text_item_3")
         },
         {
             img: img4,
-            title: 'Відокремленість',
-            text: 'Використовується власний корпоративний сервер з довільним розміщенням та обмеженим доступом'
+            title: t("features_page_postulates_title_item_4"),
+            text: t("features_page_postulates_text_item_4")
         }
     ]
 
     return(
         <section className="container">
             <div className={styles["postulates"]}>
-                <h2>Основні Постулати</h2>
+                <h2>{t("features_page_postulates_title")}</h2>
                 <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    {t("features_page_postulates_text")}
                 </p>
                 <div className={styles["grid"]}>
                     {gridItemData.map((item, key) => 
@@ -65,12 +62,12 @@ export default function Postulates({t, styles}) {
             </div>
             <div className={styles["principles"]}>
                 <div className={styles["principles_text"]}>
-                    <h2>ПРинцип роботи </h2>
+                    <h2>{t("features_page_principles_title")}</h2>
                     <p>
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        {t("features_page_principles_text_1")} 
                     </p>
                     <p>
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        {t("features_page_principles_text_2")} 
                     </p>
                 </div>
                 <div className={styles["principles_images"]}>
