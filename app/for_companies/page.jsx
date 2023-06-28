@@ -22,9 +22,12 @@ export default function ForCompanies() {
             <section className="container">
                 <div className={styles["flex"] + ' ' + styles["first-section"]}>
                     <div className={styles["text-container"]}>
-                        <h2>Платформа захищеного спілкування</h2>
-                        <p>
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        <h2>{t("for_companies_page_title")}</h2>
+                        <p style={{marginBottom: 0}}>
+                            {t("for_companies_page_text_top_1")}
+                        </p>
+                        <p style={{marginTop: 0}}>
+                            {t("for_companies_page_text_top_2")}
                         </p>
                         <div className={styles["flex"] + ' ' + styles["button-container"]}>
                             <Link href='/download'>
@@ -66,20 +69,20 @@ export default function ForCompanies() {
                 </div>
             </section>
             <section className="container">
-                <h2 className={styles["text-center"]}>Для різних видів компаній</h2>
+                <h2 className={styles["text-center"]}>{t("for_companies_page_subtitle_1")}</h2>
                 <p className={styles["text-center"]}>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    {t("for_companies_page_subtext_1")}.
                 </p>
                 <TabsComponent t={t} styles={styles}/>
             </section>
             <section className="container">
                 <div className={styles["flex"] + ' ' + styles["shield-container"]}>
-                    <h2>Безпека з dober</h2>
+                    <h2>{t("for_companies_page_subtitle_2")}r</h2>
                     <div className={styles["shield-container_grid"]}>
                         <div className={styles["shield-container_grid_item"]}>
-                            <h3>Прийняті методи та концепціїї</h3>
+                            <h3>{t("for_companies_page_title_shield_1")}</h3>
                             <p>
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit.
+                                 {t("for_companies_page_text_shield_1")}
                             </p>
                         </div>
                         <div className={styles["shield-container_grid_item-middle"]}>
@@ -91,9 +94,9 @@ export default function ForCompanies() {
                             </Link>
                         </div>
                         <div className={styles["shield-container_grid_item"]}>
-                            <h3>Прийняті методи та концепціїї</h3>
+                            <h3>{t("for_companies_page_title_shield_2")}</h3>
                             <p>
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit.
+                                 {t("for_companies_page_text_shield_2")}
                             </p>
                         </div>
                     </div>
