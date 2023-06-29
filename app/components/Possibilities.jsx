@@ -23,7 +23,7 @@ export default function Possibilities() {
             <h2>
                 {t("main_page_possibilities_title")}
             </h2>
-            <p style={{maxWidth: 650}}>
+            <p style={{maxWidth: 650, marginBottom: 30}}>
                 {t("main_page_possibilities_text")}
             </p>
             <div className={styles["possibilities_container"]}>
