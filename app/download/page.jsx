@@ -90,7 +90,7 @@ export default function Download() {
                                 <Image style={{width: '84%', height: '100%'}} src={new3} alt="example web app"></Image>
                             {/* </div> */}
                         </div>
-                        <p >{t("download_page_item_3")}</p>
+                        <p style={{letterSpacing: 0}}>{t("download_page_item_3")}</p>
                         <button style={{margin: "60px 0 20px 0"}} className={styles["button"]}>
                             <Link target="_blank" href='https://apps.apple.com/in/app/dober-business/id1659640166' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                                 <div>

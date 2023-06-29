@@ -65,7 +65,7 @@ export default function TabsComponent({ t, styles })  {
                     className={styles["tabs_container_buttons_item"] + ' ' + (activeTab === index ? styles["active_tab"] : '')}
                     onClick={() => handleTabClick(index)}
                     >
-                        {tab.title}
+                        <p>{tab.title}</p>
                     </div>
                 ))}
             </div>

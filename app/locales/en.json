@@ -13,14 +13,24 @@
 
     "button_learn_more": "Learn more", 
 
-    "main_page_title": "A platform for all your secure internal and corporate communications. Privacy in communication.",
-    "main_page_first_section_left_title": "Personal and family usage",
-    "main_page_first_section_left_text": "If you value your safety and security – the Dober app is just for you. Safe. Anonymous. Free of charge. No spam, no ads, and no personal data collection.",
-    "main_page_first_section_right_title": "Information for corporate use.",
-    "main_page_first_section_right_text": "Dober provides encryption on multiple levels and guarantees secure connection to the servers. Additionally, push notifications do not disclose the contents of the message or any meta-data to the OS the app is running on, ensuring no data is leaked to a middleman. If you value security and anonymity above all else, Dober is a great solution for your business. Data leaks will not be a problem anymore.",
+    "contact_us_page_title": "Contact us",
+    "contact_us_page_country": "Ukraine",
+    "contact_us_page_mail": "",
+    "contact_us_page_socials": "Social networks",
+    "contact_us_page_text": "If none of the options are suitable - just fill out the form and we will contact you",
+    "contact_us_page_name": "Your name",
+    "contact_us_page_number": "Phone number",
+    "contact_us_page_users_email": "Email",
+    "contact_us_page_comment": "Message text",
+    "contact_us_page_send": "Send",
 
+    "main_page_title": "Privacy in communication",
+    "main_page_first_section_left_title": "Dober for communication",
+    "main_page_first_section_left_text": "Safe. Anonymous. Free. Without spam, advertisements, and without collecting personal data - enjoy your freedom of communication.",
+    "main_page_first_section_right_title": "Dober for Company",
+    "main_page_first_section_right_text": "Independence, reliability, trust, and storage of corporate secrets - enjoy the privacy of corporate communication",
     "main_page_possibilities_title": "Our features",
-    "main_page_possibilities_text": "Messenger for those who value their privacy. Communicate anonymously and safely without disclosing your personal information. No ads, no spam, no data collection.",
+    "main_page_possibilities_text": "Messenger for those who value their privacy. Communicate anonymously and safely without disclosing your personal information. No ads, no spam, no data collection",
     "main_page_possibilities_feature_1_title": "Privacy",
     "main_page_possibilities_feature_1_text": "This is not an additional marketing option, but the principle that we adhere to and based on which we work. Only trusted people have access to the server.",
     "main_page_possibilities_feature_2_title": "Security.",
@@ -34,9 +44,9 @@
     "main_page_possibilities_feature_6_title": "Data Encryption.",
     "main_page_possibilities_feature_6_text": "Multi-level encryption of calls and messages for added security. Trusted connection between servers. Secure push notifications that allow you to display the message without compromising security and without transmitting metadata.",
 
-    "main_page_security_title": "Security or Secure",
-    "main_page_security_text_par_1": "Your account is not linked to mobile phone number or email address and is completely anonymous. Your communication in the application is protected from unauthorized third-party access. We do not transfer users personal data to third-party companies or government agencies.", 
-    "main_page_security_text_par_2": "The application does not store your personal data and encrypts your personal information, such as IP address or contacts list. We guarantee secure data storage.",
+    "main_page_security_title": "Security",
+    "main_page_security_text_par_1": "Your account is not linked to mobile phone number or email address and is completely anonymous. Your communication in the application is protected from unauthorized third-party access.", 
+    "main_page_security_text_par_2": "We do not transfer users personal data to third-party companies or government agencies. The application does not store your personal data and encrypts your personal information, such as IP address or contacts list. We guarantee secure data storage.",
     "main_page_security_text_par_3": "Additional security features, such as notifying chat participants of a screenshot taken, which cannot be disabled.",
 
     "main_page_advantages_title": "Our benefits",
@@ -68,11 +78,16 @@
     "main_page_info_for_companies_title_item_6": "Anonymity",
     "main_page_info_for_companies_text_item_6": "Support for the Tor anonymization protocol (an option that allows you to hide your IP address and protect your traffic from interception).",
 
-
     "use_dober_title": " Download and use Dober on your smartphone (IOS and Android), desktop (Web-application) or tablet",
     "use_dober_text": "Safe. Anonymous. Free of charge. No spam, no ads, and no personal data collection",
 
     "download_page_title": "Dober for your use",
+    "download_page_item_1": "Download the Dober messenger mobile APPs and be sure of the privacy of your conversations",
+    "download_page_item_2": "Use the web version of the Dober messenger without installing additional programs on the device",
+    "download_page_item_3": "Download a specialized application for business and connect to your own or corporate server",
+
+    "why_dober_title": "WHY Dober ?",
+    "why_dober_text": "Because we believe in everyone's right to free communication and provide the opportunity to use it",
 
     "help_page_question_1": "Why Dober is unique?",
     "help_page_answer_1": "You don’t need to provide any personal information (such as your phone number or email address) in order to use Dober. In Dober, all your communication is end-to-end encrypted –text messages, voice, video, files and group chats юDober supports TOR network connection out of the box, so that no one new your network location",
