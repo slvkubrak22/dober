@@ -1,6 +1,4 @@
-
-
-import { transporter } from "@/app/lib/mailer";
+import { transporter } from "@/lib/mailer";
 import { NextResponse } from "next/server";
 
 export async function POST(req, res) {
@@ -35,3 +33,4 @@ export async function POST(req, res) {
     return NextResponse.json({ res });
 
 }
+

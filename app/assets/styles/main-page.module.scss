@@ -32,6 +32,7 @@
         flex-direction: column;
         max-width: 304px; 
         margin: 0 15px;
+        min-height: 304px;
     }
 
     &_text-color {
@@ -60,6 +61,8 @@
 
     p {
         font-weight: 100;
+        min-height: 100px;
+        margin-bottom: 0;
     }
 }
 

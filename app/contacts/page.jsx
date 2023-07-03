@@ -5,8 +5,6 @@ import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import axios from "axios";
 
-
-
 import styles from "../assets/styles/contacts.module.scss";
 import SubscribeItems from "../components/SubscribeItems";
 
@@ -23,12 +21,13 @@ export default function ContactUs() {
         const formData ={name, phone, email, comment};
 
         try {
-            await axios.post("api/contacts", formData, { 
+            await axios.post("api/contacts/", formData, { 
                 
                 headers: {
                     "Content-Type": "application/json",
                 },
             });
+            console.log(name, phone, email, comment)
             setName("");
             setPhone("");
             setEmail("");
