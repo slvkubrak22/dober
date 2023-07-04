@@ -38,7 +38,7 @@ export default function Terms() {
     return (
         <section className="container">
             <div style={{padding: "0 30px"}}>
-                <h2>{t("terms_page_title")}</h2>
+                <h2>ПРАВИЛА ВИКОРИСТАННЯ DOBER</h2>
                 <div className={styles["introduction"]}>
                     <p>Діють з 1 квітня 2023 року.</p>
                     <p>

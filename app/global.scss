@@ -272,10 +272,15 @@ h1 {
     font-size: 44px;
     font-weight: 800;
     text-transform: uppercase;
+
+    @media (max-width: 700px) {
+        font-size: 34px;
+    }
 }
 
 h2 {
-    font-size: 36px;
+    // font-size: 36px;
+    font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -288,7 +293,8 @@ h2 {
 p {
     
     line-height: 20px;
-    font-size: 16px;
+    // font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -299,5 +305,7 @@ p {
 
 h3 {
     font-weight: 500;
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: 1.5rem;
 }
+

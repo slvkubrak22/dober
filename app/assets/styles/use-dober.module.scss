@@ -8,6 +8,11 @@
 
     &_justify {
         justify-content: space-between;
+
+        @media (max-width: 1150px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &_p {

@@ -21,11 +21,11 @@ export async function POST(req, res) {
         function (error, info) {
             if (error) {
                 console.log(error);
-                // res.status(500).send({ error });
+                res.status(500).send({ error });
             } else {
                 const message = `Email sent: ${info.response}`;
                 console.log(message);
-                // res.status(200).send(message);
+                res.status(200).send(message);
             }
         }
     );

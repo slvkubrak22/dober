@@ -77,7 +77,7 @@ export default function ForCompanies() {
             </section>
             <section className="container">
                 <div className={styles["flex"] + ' ' + styles["shield-container"]}>
-                    <h2>{t("for_companies_page_subtitle_2")}r</h2>
+                    <h2>{t("for_companies_page_subtitle_2")}</h2>
                     <div className={styles["shield-container_grid"]}>
                         <div className={styles["shield-container_grid_item"]}>
                             <h3>{t("for_companies_page_title_shield_1")}</h3>

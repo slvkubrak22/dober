@@ -91,14 +91,28 @@ export default function Download() {
                             {/* </div> */}
                         </div>
                         <p style={{letterSpacing: 0}}>{t("download_page_item_3")}</p>
-                        <button style={{margin: "60px 0 20px 0"}} className={styles["button"]}>
-                            <Link target="_blank" href='https://apps.apple.com/in/app/dober-business/id1659640166' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                                <div>
-                                    <Image src={download_arrow} alt="download arrow"></Image>
+                        <Link target="_blank" href='https://apps.apple.com/in/app/dober-business/id1659640166'>
+                            <div className={styles["item_link"]}>
+                                <div className={styles["center"]}>
+                                    <div>
+                                        <Image src={ios} alt="ios logo"></Image>
+                                    </div>
+                                    <p>App Store</p>
                                 </div>
-                                <p>Download</p>
-                            </Link>
-                        </button>
+                                <Image className={styles["arrow"]} src={arrow}></Image>
+                            </div>
+                        </Link>
+                        <Link target="_blank" href='https://play.google.com/store/apps/details?id=chat.dober&pli=1'>
+                            <div className={styles["item_link"]}>
+                                <div className={styles["center"]}>
+                                    <div>
+                                        <Image src={android} alt="android logo"></Image>
+                                    </div>
+                                    <p>Google Play</p>
+                                </div>
+                                <Image className={styles["arrow"]} src={arrow}></Image>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
