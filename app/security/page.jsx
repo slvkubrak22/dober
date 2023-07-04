@@ -106,10 +106,10 @@ export default function Security() {
                     <div className={styles["text"]}>
                         <h3>{t("security_page_subtitle")}</h3>
                         <p>
-                            {t("security_page_subtext_1")}. 
+                            {t("security_page_subtext_1")} 
                         </p>
                         <p>
-                            {t("security_page_subtext_2")}. 
+                            {t("security_page_subtext_2")} 
                         </p>
                     </div>
                     <div className={styles["image-container"]}>

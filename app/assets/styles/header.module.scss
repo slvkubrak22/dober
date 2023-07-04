@@ -6,10 +6,20 @@
     justify-content: space-between;
     padding: 14px 0;
 
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
     &_list {
         display: flex;
         font-weight: 300;
         font-size: $medium-text;
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
     }
     &_item {
         margin: 0 30px;
@@ -17,6 +27,10 @@
     &_buttons-container {
         display: flex;
         margin-right: 20px;
+
+        @media (max-width: 1200px) {
+            margin-right: 0;
+        }
     }
     &_select-lang {
         display: flex;
@@ -77,6 +91,10 @@
 
         &:hover .drop-menu_wrapper {
             display: block;
+
+            @media (max-width: 1200px) {
+                display: flex;
+            }
         }
         &:hover .menu-arrow {
             rotate: 180deg;
@@ -84,6 +102,10 @@
 
         .drop-menu-products {
             right: 7px;
+
+            @media (max-width: 1200px) {
+                right: 0;
+            }
         }
     }
     &_wrapper {
@@ -93,13 +115,85 @@
         border-radius: 15px;
         display: none;
 
+        @media (max-width: 1200px) {
+            position: static;
+            background-color: inherit;
+            color: $main-color-text2;
+            // padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         p {
             color: $main-color-text2;
             margin-top: 0;
+
+            @media (max-width: 1200px) {
+                color: $main-color-text2;
+            }
         }
 
         & p:hover {
             color:#04022861;
         }
     }
+}
+
+.adapt {
+    display: none;
+    color: $main-color-text2;
+
+    // @media (max-width: 1200px) {
+    //     display: ;
+    // }
+}
+
+
+
+.header-adapt {
+    display: none;
+    padding: 14px 0;
+
+    @media (max-width: 1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+.burger-line-top, .burger-line-bottom {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.whitecolor {
+    background-color: #fff;
+}
+.darkcolor {
+    background-color: #04022861;
+}
+
+.burger-line-bottom {
+    bottom: 0;
+}
+
+.burger-line-mid {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
 }
