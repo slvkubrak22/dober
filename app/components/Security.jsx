@@ -26,7 +26,7 @@ export default function Security() {
           <p>
             {t("main_page_security_text_par_3")}
           </p>
-          <Link href="/security" >
+          <Link href="/security" className={styles["link-button"]}>
             <button className={styles["security_button"]}>{t("button_learn_more")}</button>
           </Link>
         </div>

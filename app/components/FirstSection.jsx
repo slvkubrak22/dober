@@ -2,13 +2,24 @@
 
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 import Image from "next/image";
 import mobile1 from "../assets/img/mobile_1.png";
 import mobile2 from "../assets/img/mobile_2.png";
+import mobile_adapt_1 from "../assets/img/mobile_adapt_1.png";
 import styles from "../assets/styles/main-page.module.scss";
 
 export default function FirstSection() {
+
+  const [matches, setMatches] = useState(
+     window.matchMedia("(max-width: 1000px)").matches
+  );
+  useEffect(() => {
+      window
+      .matchMedia("(max-width: 1000px)")
+      .addEventListener('change', e => setMatches(e.matches));
+  }, []);
 
   const { t } = useTranslation();
 
@@ -20,7 +31,7 @@ export default function FirstSection() {
           {t("main_page_title")}
         </h1>
         <div className={styles["first-section"]}>
-          <div className={styles["first-section_subitem"]}>
+          <div className={styles["first-section_subitem"] + ' ' + styles["adapt-margin"]}>
             <div className={styles["first-section_description"]}>
               <h2
                 className={
@@ -51,7 +62,7 @@ export default function FirstSection() {
             <div className={styles["image-container"]} style={{marginRight: 5}}>
               <Image
                 // width={300}
-                src={mobile1}
+                src={!matches ? mobile1 : mobile_adapt_1}
                 alt="mobile screen example"
               />
             </div>

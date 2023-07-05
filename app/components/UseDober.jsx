@@ -35,7 +35,7 @@ export default function UseDober() {
                             </div>
                         </div>
                     </div>
-                    <div style={{padding: "50px 0"}}>
+                    <div className={styles["text-container"]}>
                         <h2 className={styles["h2"]}>{t("use_dober_title")}</h2>
                         <p className={styles["text"]}>{t("use_dober_text")}</p>
                         <Link href="./download">

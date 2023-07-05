@@ -86,7 +86,7 @@ export default function InfoForCompanies() {
         <section className="container">
             <div className={styles["info-for-companies"]}>
                 <h2>{t("main_page_info_for_companies_title")}</h2>
-                <p style={{maxWidth: '63%'}} className={styles["info-for-companies_p"]}>
+                <p className={styles["info-for-companies_p"]}>
                     {t("main_page_info_for_companies_text")}
                 </p>
                 <div className={styles["info-for-companies_list"]}>

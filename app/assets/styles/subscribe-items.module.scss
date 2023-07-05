@@ -8,6 +8,10 @@
         cursor: pointer;
         margin: 50px;
 
+        @media (max-width: 600px) {
+            margin: 10px;
+        }
+
         &_logo-container {
             width: 100px;
             height: 100px;

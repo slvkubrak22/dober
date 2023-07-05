@@ -238,6 +238,12 @@ button {
     color: $main-color-text2;
     background-color: $main-color-text1;
     border: 2px solid $main-color-text1;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+        padding: 7px 14px;
+
+    }
 }
 
 button:hover {
@@ -283,6 +289,10 @@ h2 {
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
+
+    @media (max-width: 600px) {
+        font-size: 20px;
+    }
 }
 
 .possibilities {
@@ -293,9 +303,13 @@ h2 {
 p {
     
     line-height: 20px;
-    // font-size: 16px;
-    font-size: 1rem;
+    font-size: 16px;
+    // font-size: 1rem;
     font-weight: 300;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+    }
 }
 
 .small-text {
@@ -305,7 +319,10 @@ p {
 
 h3 {
     font-weight: 500;
-    // font-size: 20px;
-    font-size: 1.5rem;
+    font-size: 20px;
+    // font-size: 1.5rem;
+    @media (max-width: 600px) {
+        font-size: 18px;
+    }
 }
 

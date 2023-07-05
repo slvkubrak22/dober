@@ -158,7 +158,7 @@ export default function Header() {
 
                     <div className={style["header-adapt"]}>
                         <Link href='/'>
-                            <Image className="logo" src={changeLogo()} alt="main Dober logo" />
+                            <Image className={style["logo"]} src={changeLogo()} alt="main Dober logo" />
                         </Link>
                         <div style={{display: 'flex', alignItems: 'center'}}>
                             <Link href="./download">
