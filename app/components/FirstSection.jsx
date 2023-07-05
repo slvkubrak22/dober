@@ -12,13 +12,33 @@ import styles from "../assets/styles/main-page.module.scss";
 
 export default function FirstSection() {
 
-  const [matches, setMatches] = useState(
-     window.matchMedia("(max-width: 1000px)").matches
-  );
+  // const [matches, setMatches] = useState(
+  //    window.matchMedia("(max-width: 1000px)").matches
+  // );
+  // useEffect(() => {
+  //     window
+  //     .matchMedia("(max-width: 1000px)")
+  //     .addEventListener('change', e => setMatches(e.matches));
+  // }, []);
+
+  const [imageSrc, setImageSrc] = useState('');
+
   useEffect(() => {
-      window
-      .matchMedia("(max-width: 1000px)")
-      .addEventListener('change', e => setMatches(e.matches));
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 1000) {
+        setImageSrc(mobile_adapt_1);
+      } else {
+        setImageSrc(mobile1);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Вызовите функцию сразу, чтобы установить изображение при инициализации
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   const { t } = useTranslation();
@@ -62,7 +82,11 @@ export default function FirstSection() {
             <div className={styles["image-container"]} style={{marginRight: 5}}>
               <Image
                 // width={300}
-                src={!matches ? mobile1 : mobile_adapt_1}
+                // src={!matches ? mobile1 : mobile_adapt_1}
+                src={imageSrc}
+                media={{
+                  '(max-width: 1000px)': mobile_adapt_1,
+                }}
                 alt="mobile screen example"
               />
             </div>
