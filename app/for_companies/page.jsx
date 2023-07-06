@@ -22,14 +22,14 @@ export default function ForCompanies() {
             <section className="container">
                 <div className={styles["flex"] + ' ' + styles["first-section"]}>
                     <div className={styles["text-container"]}>
-                        <h2>{t("for_companies_page_title")}</h2>
-                        <p style={{marginBottom: 0}}>
+                        <h2 className={styles['text-container_order-1']}>{t("for_companies_page_title")}</h2>
+                        <p style={{marginBottom: 0}} className={styles["text-container_order-2"]}>
                             {t("for_companies_page_text_top_1")}
                         </p>
-                        <p style={{marginTop: 0}}>
+                        <p style={{marginTop: 0}} className={styles["text-container_order-3"]}>
                             {t("for_companies_page_text_top_2")}
                         </p>
-                        <div className={styles["flex"] + ' ' + styles["button-container"]}>
+                        <div className={styles["flex"] + ' ' + styles["button-container"] + ' ' + styles["text-container_order-5"]}>
                             <Link href='/download'>
                                 <button className={styles["button"]}>Download</button>
                             </Link>
@@ -37,7 +37,7 @@ export default function ForCompanies() {
                                 <button className={styles["button"]}>Contact us</button>
                             </Link>
                         </div>
-                        <div className={styles["flex"] + ' ' + styles["icon-link-container"]}>
+                        <div className={styles["flex"] + ' ' + styles["icon-link-container"] + ' ' + styles["text-container_order-4"]}>
                             <div className={styles["flex"]}>
                                 <Link target="_blank" href='https://play.google.com/store/apps/details?id=me.dober'>
                                     <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,0 +1,32 @@
+.slider-titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .slide-title {
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .slide-title.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .slider-container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+  }
+  
+  .slider-slide {
+    flex: 0 0 100vw;
+    scroll-snap-align: start;
+  }
+  
+  .slider-slide.active {
+    background-color: lightgray;
+  }
+  

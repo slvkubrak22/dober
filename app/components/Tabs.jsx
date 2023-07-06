@@ -12,6 +12,12 @@ import tab_img_6 from "../assets/img/for-companies/tab_img_6.svg";
 
 export default function TabsComponent({ t, styles })  {
 
+  const [open, setOpen] = useState();
+  
+  const onOpen = () => {
+    setOpen(!open);
+  }
+
     const [activeTab, setActiveTab] = useState(0);
     const tabsData = [
       {
@@ -57,6 +63,7 @@ export default function TabsComponent({ t, styles })  {
     };
   
     return (
+      <>
         <div className={styles["tabs_container"]}>
             <div className={styles["tabs_container_buttons"]}>
                 {tabsData.map((tab, index) => (
@@ -83,6 +90,17 @@ export default function TabsComponent({ t, styles })  {
                 ))}
             </div>
         </div>
+        <div className="dropped-tabs-container"> 
+          <div className='dropped-tabs-container_item'>
+            <div className='dropped-tabs-container_item_button'>
+              <p>{title}</p>
+            </div>
+            <div className='dropped-tabs-container_item_content'>
+              
+            </div>
+          </div>
+        </div>      
+      </>  
     );
 };
 

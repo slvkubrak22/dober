@@ -6,10 +6,17 @@ import Link from "next/link";
 import styles from "../assets/styles/donate-page.module.scss";
 
 import DonateCryptoInfo from "../components/DonateCryptoInfo";
+import Slider from "../components/donate/DonateSlider";
 
 export default function Donate() {
 
     const { t } = useTranslation();
+
+    const slides = [
+        { title: 'Заголовок 1', content: 'Содержимое слайда 1' },
+        { title: 'Заголовок 2', content: 'Содержимое слайда 2' },
+        { title: 'Заголовок 3', content: 'Содержимое слайда 3' },
+    ];
 
     return (
         <>
@@ -32,6 +39,7 @@ export default function Donate() {
                         </Link>
                     </div>
                 </div>
+                <Slider slides={slides}/>
             </section>
         </>
 
