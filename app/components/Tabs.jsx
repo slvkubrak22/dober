@@ -9,14 +9,14 @@ import tab_img_3 from "../assets/img/for-companies/tab_img_3.svg";
 import tab_img_4 from "../assets/img/for-companies/tab_img_4.svg";
 import tab_img_5 from "../assets/img/for-companies/tab_img_5.svg";
 import tab_img_6 from "../assets/img/for-companies/tab_img_6.svg";
+import tab_arrow from "../assets/img/for-companies/tab-arrow.svg";
 
 export default function TabsComponent({ t, styles })  {
 
-  const [open, setOpen] = useState();
-  
-  const onOpen = () => {
-    setOpen(!open);
-  }
+    const [open, setOpen] = useState();
+    const onOpen = () => {
+      setOpen(!open);
+    }
 
     const [activeTab, setActiveTab] = useState(0);
     const tabsData = [
@@ -84,22 +84,32 @@ export default function TabsComponent({ t, styles })  {
                             <p>{tab.text_2}</p>
                         </div>
                         <div className='image-container'>
-                            <Image src={tab.image} />
+                            <Image src={tab.image} alt='for companies image'/>
                         </div>
                     </div>
                 ))}
             </div>
         </div>
-        {/* <div className="dropped-tabs-container"> 
-          <div className='dropped-tabs-container_item'>
-            <div className='dropped-tabs-container_item_button'>
-              <p>{title}</p>
+
+        <div className={styles["dropped-tabs-container"]}> 
+          {tabsData.map((tab, key) => 
+            <div key={key} className={styles['dropped-tabs-container_item']}>
+              <div onClick={onOpen} className={styles['dropped-tabs-container_item_button'] + ' ' + (open ? styles['active_tab_adapt'] : '')}>
+                <p>{tab.title}</p> 
+                <Image className={styles['tab-arrow'] + ' ' + (open ? styles['active_arrow_tab_adapt'] : '')} src={tab_arrow} alt='tab arrow'/>
+              </div>
+              { open && <div className={styles['dropped-tabs-container_item_content'] + ' ' + (open ? styles['active_tab_content_adapt'] : '')}>
+                <div className={styles['tabs_container_content_inner_text-container']}>
+                    <p>{tab.text_1}</p>
+                    <p>{tab.text_2}</p>
+                </div>
+                <div className='image-container'>
+                    <Image src={tab.image} alt='for companies image'/>
+                </div>
+              </div>}
             </div>
-            <div className='dropped-tabs-container_item_content'>
-              
-            </div>
-          </div>
-        </div>       */}
+          )}
+        </div>      
       </>  
     );
 };
