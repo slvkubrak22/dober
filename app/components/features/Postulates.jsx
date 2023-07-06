@@ -45,7 +45,7 @@ export default function Postulates({t, styles}) {
         <section className="container">
             <div className={styles["postulates"]}>
                 <h2>{t("features_page_postulates_title")}</h2>
-                <p>
+                <p className={styles["first-p"]}>
                     {t("features_page_postulates_text")}
                 </p>
                 <div className={styles["grid"]}>

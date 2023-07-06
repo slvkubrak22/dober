@@ -241,8 +241,10 @@ button {
 
     @media (max-width: 600px) {
         font-size: 14px;
+        // padding: 7px 14px;
+    }
+    @media (max-width: 400px) {
         padding: 7px 14px;
-
     }
 }
 

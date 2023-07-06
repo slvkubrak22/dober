@@ -15,7 +15,7 @@ export default function TopSection ({t, styles}) {
                             {t("features_page_top_section_text_2")}
                         </p>
                     </div>
-                    <Link href="/security"><button>{t("button_learn_more")}</button></Link>
+                    <Link href="/security" className={styles["link-button"]}><button>{t("button_learn_more")}</button></Link>
                 </div>
             </div>
         </section>

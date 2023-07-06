@@ -12,15 +12,6 @@ import styles from "../assets/styles/main-page.module.scss";
 
 export default function FirstSection() {
 
-  // const [matches, setMatches] = useState(
-  //    window.matchMedia("(max-width: 1000px)").matches
-  // );
-  // useEffect(() => {
-  //     window
-  //     .matchMedia("(max-width: 1000px)")
-  //     .addEventListener('change', e => setMatches(e.matches));
-  // }, []);
-
   const [imageSrc, setImageSrc] = useState('');
 
   useEffect(() => {
@@ -34,7 +25,7 @@ export default function FirstSection() {
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Вызовите функцию сразу, чтобы установить изображение при инициализации
+    handleResize();
 
     return () => {
       window.removeEventListener('resize', handleResize);

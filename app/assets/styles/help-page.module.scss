@@ -17,6 +17,10 @@
     display: flex;
     flex-direction: column;
     padding: 0 50px;
+
+    @media (max-width: 600px) {
+        padding: 0 10px;
+    }
 }
 
 .faq-title {

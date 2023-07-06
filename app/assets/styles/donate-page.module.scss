@@ -8,18 +8,38 @@
     display: flex;
     padding: 0 30px;
     margin-bottom: 50px;
+
+    @media (max-width: 1060px) {
+        flex-direction: column;
+    }
     
     .border {
         border-right: solid 1px #215AC13B;
         padding-right: 20px;
+
+        @media (max-width: 1060px) {
+            border: none;
+        }
     }
 
     .padding {
         padding-left: 20px;
+
+        @media (max-width: 1060px) {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: start;
+        }
     }
 
     &_item {
         width: 50%;
+
+        @media (max-width: 1060px) {
+            width: 100%;
+        }
 
         h3 {
             margin-top: 0;
@@ -28,6 +48,18 @@
         h4 {
             font-size: 18px;
             font-weight: 400;
+        }
+
+        a {
+            @media (max-width: 500px) {
+                width: 100%;
+            }
+        }
+
+        button {
+            @media (max-width: 500px) {
+                width: 100%;
+            }
         }
     }
 
@@ -61,6 +93,10 @@
         .code {
             margin: 10px 5px;
             cursor: pointer;
+
+            @media (max-width: 500px) {
+                font-size: 12px;
+            }
         }
     }
 }
