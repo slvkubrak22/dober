@@ -90,7 +90,7 @@ export default function TabsComponent({ t, styles })  {
                 ))}
             </div>
         </div>
-        <div className="dropped-tabs-container"> 
+        {/* <div className="dropped-tabs-container"> 
           <div className='dropped-tabs-container_item'>
             <div className='dropped-tabs-container_item_button'>
               <p>{title}</p>
@@ -99,7 +99,7 @@ export default function TabsComponent({ t, styles })  {
               
             </div>
           </div>
-        </div>      
+        </div>       */}
       </>  
     );
 };
