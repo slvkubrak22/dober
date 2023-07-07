@@ -99,7 +99,10 @@ export default function ForCompanies() {
                                  {t("for_companies_page_text_shield_2")}
                             </p>
                         </div>
-                    </div>
+                        <Link className={styles["button-adapt"]} href="/security">
+                            <button className={styles["button"]}>{t("button_learn_more")}</button>
+                        </Link>
+                </div>
                 </div>
             </section>
             <UseDober />

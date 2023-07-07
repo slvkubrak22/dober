@@ -10,12 +10,20 @@ import tab_img_4 from "../assets/img/for-companies/tab_img_4.svg";
 import tab_img_5 from "../assets/img/for-companies/tab_img_5.svg";
 import tab_img_6 from "../assets/img/for-companies/tab_img_6.svg";
 import tab_arrow from "../assets/img/for-companies/tab-arrow.svg";
+import tab_arrow_light from "../assets/img/for-companies/tab-arrow-light.svg";
 
 export default function TabsComponent({ t, styles })  {
 
-    const [open, setOpen] = useState();
-    const onOpen = () => {
-      setOpen(!open);
+    // const [open, setOpen] = useState();
+    // const onOpen = () => {
+    //   setOpen(!open);
+    // }
+    const [tabStates, setTabStates] = useState({});
+    const onOpen = (key) => {
+      setTabStates((prevState) => ({
+        ...prevState,
+        [key]: !prevState[key]
+      }));
     }
 
     const [activeTab, setActiveTab] = useState(0);
@@ -92,24 +100,30 @@ export default function TabsComponent({ t, styles })  {
         </div>
 
         <div className={styles["dropped-tabs-container"]}> 
-          {tabsData.map((tab, key) => 
+          {tabsData.map((tab, key) => (
             <div key={key} className={styles['dropped-tabs-container_item']}>
-              <div onClick={onOpen} className={styles['dropped-tabs-container_item_button'] + ' ' + (open ? styles['active_tab_adapt'] : '')}>
+              <div onClick={() => onOpen(key)} className={styles['dropped-tabs-container_item_button'] + ' ' + (tabStates[key] ? styles['active_tab_adapt'] : '')}>
                 <p>{tab.title}</p> 
-                <Image className={styles['tab-arrow'] + ' ' + (open ? styles['active_arrow_tab_adapt'] : '')} src={tab_arrow} alt='tab arrow'/>
+                <div className={styles['tab-arrow-container'] + ' ' + (!tabStates[key] ? styles['active_arrow_tab_adapt'] : '')}>
+                  <svg className={styles['tab-arrow']} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07992 15.0898L10.5999 8.56984C11.3699 7.79984 12.6299 7.79984 13.3999 8.56984L19.9199 15.0898" stroke={tabStates[key] ? "white" : '#04022A'} stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
               </div>
-              { open && <div className={styles['dropped-tabs-container_item_content'] + ' ' + (open ? styles['active_tab_content_adapt'] : '')}>
-                <div className={styles['tabs_container_content_inner_text-container']}>
-                    <p>{tab.text_1}</p>
-                    <p>{tab.text_2}</p>
+              {tabStates[key] && (
+                <div className={styles['dropped-tabs-container_item_content'] + ' ' + (tabStates[key] ? styles['active_tab_content_adapt'] : '')}>
+                  <div className={styles['tabs_container_content_inner_text-container']}>
+                      <p>{tab.text_1}</p>
+                      <p>{tab.text_2}</p>
+                  </div>
+                  <div className='image-container'>
+                      <Image src={tab.image} alt='for companies image'/>
+                  </div>
                 </div>
-                <div className='image-container'>
-                    <Image src={tab.image} alt='for companies image'/>
-                </div>
-              </div>}
+              )}
             </div>
-          )}
-        </div>      
+          ))}
+        </div>
       </>  
     );
 };

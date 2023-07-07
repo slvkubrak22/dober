@@ -19,6 +19,10 @@
         background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
         color: $main-color-text1;
     }
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .first-section {
@@ -188,10 +192,22 @@
     align-items: center;
     padding: 0 30px;
 
+    a {
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
+
     &_grid {
         display: grid;
         grid-template-columns: 1.5fr 1fr 1.5fr;
         column-gap: 20px;
+
+    @media (max-width: 1050px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
         &_item {
             text-align: center;
@@ -201,6 +217,18 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            a {
+                @media (max-width: 1050px) {
+                    display: none;
+                } 
+            }
+
+            img {
+                @media (max-width: 1050px) {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -234,16 +262,43 @@
             background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
             height: 0;
             transition: all 0.3s;
+            color: $main-color-text1;
+            padding: 14px;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
 
 .active_tab_adapt {
     background: linear-gradient(90deg, #742AA7 0%, #0D3E93 100%);
+    color: $main-color-text1;
 }
 .active_tab_content_adapt {
     height: auto;
 }
+.tab-arrow-container {
+    transition: all 0.3s;
+    position: absolute;
+    top: 24px;
+    right: 12px;
+    width: 20px;
+
+    .tab-arrow {
+        width: 100%;
+    }
+}
 .active_arrow_tab_adapt {
     rotate: 180deg;
+}
+
+.button-adapt {
+    display: none;
+
+    @media (max-width: 1050px) {
+        display: block;
+        align-self: center;
+    }
 }
