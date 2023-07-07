@@ -30,7 +30,7 @@ export default function Possibilities() {
                 <div className={styles["possibilities_item"] + ' ' + styles["span-two"] + ' ' + styles["possibilities_bg-color1"] + ' ' + styles["possibilities_order-2"]}>
                     <Image src={img2} alt="privacy icon"/>
                     <h3 className={styles["possibilities_h3"]}>{t("main_page_possibilities_feature_1_title")}</h3>
-                    <p className={styles["possibilities_p"]}>{t("main_page_possibilities_feature_1_text")}.</p>
+                    <p className={styles["possibilities_p"]}>{t("main_page_possibilities_feature_1_text")}</p>
                     <div className={styles["possibilities_arrow"]}>
                         <Image src={arrow} alt="arrow" />
                     </div>
@@ -38,7 +38,7 @@ export default function Possibilities() {
                 <div className={styles["possibilities_item"] + ' ' + styles["possibilities_bg-color1"] + ' ' + styles["possibilities_order-1"]}>
                     <Image src={img1} alt="security icon"/>
                     <h3 className={styles["possibilities_h3"]}>{t("main_page_possibilities_feature_2_title")}</h3>
-                    <p  className={styles["possibilities_p"] + ' ' + styles['text-adapt'] }>{t("main_page_possibilities_feature_2_text")}.</p>
+                    <p  className={styles["possibilities_p"] + ' ' + styles['text-adapt'] }>{t("main_page_possibilities_feature_2_text")}</p>
                     <div className={styles["possibilities_arrow"]}>
                         <Image src={arrow} alt="arrow" />
                     </div>
@@ -46,7 +46,7 @@ export default function Possibilities() {
                 <div className={styles["possibilities_item"] + ' ' + styles["possibilities_bg-color2"] + ' ' + styles["possibilities_order-4"]}>
                     <Image src={img6} alt="functionality icon"/>
                     <h3 className={styles["possibilities_h3"]}>{t("main_page_possibilities_feature_4_title")}</h3>
-                    <p  className={styles["possibilities_p"] + ' ' + styles['text-adapt'] }>{t("main_page_possibilities_feature_4_text")}.</p>
+                    <p  className={styles["possibilities_p"] + ' ' + styles['text-adapt'] }>{t("main_page_possibilities_feature_4_text")}</p>
                     <div className={styles["possibilities_arrow"]}>
                         <Image src={arrow} alt="arrow" />
                     </div>
@@ -70,7 +70,7 @@ export default function Possibilities() {
                 <div className={styles["possibilities_item"] + ' ' + styles["possibilities_bg-color2"] + ' ' + styles["possibilities_order-5"]}>
                     <Image src={img4} alt="mobility icon"/>
                     <h3 className={styles["possibilities_h3"]}>{t("main_page_possibilities_feature_5_title")}</h3>
-                    <p  className={styles["possibilities_p"] + ' ' + styles['text-adapt'] }>{t("main_page_possibilities_feature_5_text")}.</p>
+                    <p  className={styles["possibilities_p"] + ' ' + styles['text-adapt'] }>{t("main_page_possibilities_feature_5_text")}</p>
                     <div className={styles["possibilities_arrow"]}>
                         <Image src={arrow} alt="arrow" />
                     </div>

@@ -266,7 +266,7 @@ export default function Help() {
     
     return (
         <section className="container">
-            <h2 className={styles["text-center"]}>How may we help you?</h2>
+            <h2 className={styles["text-center"]}>{t("help_page_title")}</h2>
             {/* <div className={styles["buttons-container"]}>
                 <div className={styles["input-container"]}>
                     <input type="text" placeholder="Search FQAs"/>

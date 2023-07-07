@@ -126,8 +126,11 @@
     "security_page_control_title": "Certificate of compliance and attestation Dober",
 
     "for_companies_page_title": "Secure communication platform",
-    "for_companies_page_text_top_1": "Dober dedicated server is - your chosen location; chosen and trusted users; private server address;",
-    "for_companies_page_text_top_2": "the most secure information storage",
+    "for_companies_page_text_top_1": "Dober dedicated server is -",
+    "for_companies_page_text_top_2": "your chosen location",
+    "for_companies_page_text_top_3": "chosen and trusted users",
+    "for_companies_page_text_top_4": "private server address",
+    "for_companies_page_text_top_5": "the most secure information storage",
     "for_companies_page_subtitle_1": "For different types of companies",
     "for_companies_page_subtext_1": "Companies are different, the goal is the same - to protect corporate information",
     "for_companies_page_title_tab_1": "Financial institutions",
@@ -163,14 +166,16 @@
     "download_page_item_3": "Download a specialized application for business and connect to your own or corporate server",
 
     "donate_page_title": "Donat For Dober",
-    "donate_page_subtitle_1": "Donate CRYPTO",
-    "donate_page_subtitle_2": "Donate Money",
+    "donate_page_subtitle_1": "Donate cryptocurrency",
+    "donate_page_subtitle_2": "Donate to Dober",
+    "donate_page_subtitle_3": "Wallet Addresses",
     "donate_page_text_1": "Donations in cryptocurrency are accepted directly to the respective Dober wallets completely anonymously. If you want to support the project with a cryptocurrency that is not on the list, contact us via email address support@dober.chat ",
     "donate_page_text_2": "Your donations help us develop Dober, implement new security and anonymity features, and keep our servers running. They stimulate us to work and give us faith that we are on the right path.",
 
     "why_dober_title": "WHY Dober ?",
     "why_dober_text": "Because we believe in everyone's right to free communication and provide the opportunity to use it",
 
+    "help_page_title": "How may we help you?",
     "help_page_question_1": "Why Dober is unique?",
     "help_page_answer_1": "You don’t need to provide any personal information (such as your phone number or email address) in order to use Dober. In Dober, all your communication is end-to-end encrypted –text messages, voice, video, files and group chats юDober supports TOR network connection out of the box, so that no one new your network location",
     "help_page_question_2": "What is Nickname in Dober?",
