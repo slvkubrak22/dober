@@ -6,6 +6,11 @@
     padding: 0 30px;
     margin-bottom: 50px;
 
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     & .phones {
         display: flex;
         flex-direction: column;
@@ -15,6 +20,10 @@
         font-size: 28px;
         font-weight: 700;
         margin-top: 10px;
+
+        @media (max-width: 600px) {
+            font-size: 18px;
+        }
     }
 
     &_item {
@@ -26,6 +35,10 @@
     display: flex;
     flex-direction: column;
     max-width: 500px;
+
+    @media (max-width: 800px) {
+        width: 100%;
+    }
 
     & p {
         font-weight: 700;
@@ -47,6 +60,10 @@
             border-radius: 16px;
             border: solid 1px #04022A66;
             font-size: 20px;
+
+            @media (max-width: 600px) {
+                font-size: 14px;
+            }
         }
 
         & textarea {
@@ -60,6 +77,11 @@
    border: 1px solid $main-color-text2;
     align-self: baseline;
     padding: 18px 100px;
+
+    @media (max-width: 500px) {
+        align-self: center;
+        width: 100%;
+    }
 
     &:hover {
         background: $bg-color-1;

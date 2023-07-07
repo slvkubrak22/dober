@@ -148,9 +148,9 @@ export default function Header() {
                                     <Image className={style["menu-arrow"] + ' ' + style["menu-arrow-lang"]} src={pathname === '/' || pathname === "/features" ? arrow : arrow_black} alt="menu arrow" style={{right: -20, top: 22}}/>
                                 </div>
                                 <div className={style["drop-menu_wrapper"] + ' ' + style["drop-menu-lang"]}>
-                                    <p onClick={() => handleLanguageChange('ru')}>RU</p>
                                     <p onClick={() => handleLanguageChange('ua')}>UA</p>
-                                    <p style={{marginBottom: 0}} onClick={() => handleLanguageChange('en')}>EN</p>
+                                    <p onClick={() => handleLanguageChange('en')}>EN</p>
+                                    <p style={{marginBottom: 0}} onClick={() => handleLanguageChange('ru')}>RU</p>
                                 </div>
                             </div>
                         </div>
@@ -219,9 +219,9 @@ export default function Header() {
                         </div>
 
                         <div className={style["drop-menu_wrapper"] + ' ' + style["drop-menu-lang"]} style={{display: showLang ? 'flex' : 'none'}}>
-                            <p onClick={() => handleLanguageChange('ru')}>RU</p>
                             <p onClick={() => handleLanguageChange('ua')}>UA</p>
-                            <p style={{marginBottom: 0}} onClick={() => handleLanguageChange('en')}>EN</p>
+                            <p onClick={() => handleLanguageChange('en')}>EN</p>
+                            <p style={{marginBottom: 0}} onClick={() => handleLanguageChange('ru')}>RU</p>
                         </div>
                     </div>
                 </div>
