@@ -49,10 +49,10 @@ export default function Footer() {
                         </div>
                         <div className={styles["flex"] + ' ' + styles["right"]}>
                             <Link href="/terms">
-                                <p>Terms & Conditions</p>
+                                <p>{t("terms")}</p>
                             </Link>
                             <Link href="/privacy-polity">
-                                <p>Privacy Policy</p>
+                                <p>{t("privacy&policy")}</p>
                             </Link>
                         </div>
                     </div>
