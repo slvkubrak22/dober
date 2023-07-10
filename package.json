@@ -19,6 +19,7 @@
     "react-redux": "^8.0.7",
     "react-server-components": "^0.0.0",
     "redux": "^4.2.1",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "swiper": "^6.8.4"
   }
 }

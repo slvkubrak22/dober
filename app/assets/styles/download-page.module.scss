@@ -11,6 +11,10 @@
     padding: 0 30px;
     margin-bottom: 50px;
 
+    @media (max-width: 1070px) {
+        display: none;
+    }
+
     &_items {
         display: flex;
         flex-direction: column;
@@ -97,3 +101,9 @@
     align-items: center;
 }
 
+.download-slider {
+    display: none;
+    @media (max-width: 1070px) {
+        display: block;
+    }
+}
