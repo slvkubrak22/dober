@@ -10,6 +10,11 @@
     row-gap: 20px;
     padding: 0 30px;
 
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+    }
+
     &_item {
         display: flex;
         flex-direction: column;
@@ -18,9 +23,17 @@
         border-radius: 16px;
         background-color: #F3F3F4;
 
+        @media (max-width: 1024px) {
+            text-align: center;
+        }
+
         p {
             align-self: baseline;
             margin: 0;
+
+            @media (max-width: 1024px) {
+                align-self: center;
+            }
         }
 
         &:hover {
@@ -50,8 +63,17 @@
     margin-top: 80px;
     padding: 0 30px;
 
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }    
+
     .text {
         max-width: 500px;
+
+        @media (max-width: 1024px) {
+            max-width: unset;
+            width: 100%;
+        }
 
         h3 {
             font-size: 34px;
@@ -70,9 +92,17 @@
 
     .image-container {
         max-height: 500px;
+
+        @media (max-width: 1024px) {
+            max-height: unset;
+        }
         
         img {
             height: 100%;
+
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
         }
     }
 }
@@ -82,8 +112,16 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 1024px) {
+        display: none;
+    }
+
     .image-container {
         width: 50%;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
 
         img {
             width: 100%;
@@ -121,7 +159,16 @@
   }
 
   
-  
+.image-container {    
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
   
   
   

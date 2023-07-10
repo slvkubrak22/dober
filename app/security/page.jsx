@@ -17,6 +17,7 @@ import control_2 from "../assets/img/security/control_2.png";
 
 import styles from "../assets/styles/security-page.module.scss";
 import Subscribe from "../components/Subscribe";
+import Slider from "../components/SecuritySlider";
 
 export default function Security() {
 
@@ -136,6 +137,7 @@ export default function Security() {
                         </div>
                     </div>
                 )}
+                <Slider control_1={control_1} control_2={control_2} styles={styles} />
             </section>
             <Subscribe />
         </>
