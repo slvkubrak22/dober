@@ -26,16 +26,16 @@ export default function ForCompanies() {
                         <p style={{marginBottom: 0}} className={styles["text-container_order-2"]}>
                             {t("for_companies_page_text_top_1")}
                         </p>
-                        <p style={{marginTop: 0, marginBottom: 0, marginLeft: 20}} className={styles["text-container_order-3"]}>
+                        <p style={{marginTop: 0, marginBottom: 0}} className={styles["text-container_order-3"] + ' ' + styles['margin20']}>
                             {t("for_companies_page_text_top_2")}
                         </p>
-                        <p style={{marginTop: 0, marginBottom: 0, marginLeft: 30}} className={styles["text-container_order-3"]}>
+                        <p style={{marginTop: 0, marginBottom: 0}} className={styles["text-container_order-3"] + ' ' + styles['margin30']}>
                             {t("for_companies_page_text_top_3")}
                         </p>
-                        <p style={{marginTop: 0, marginBottom: 0, marginLeft: 40}} className={styles["text-container_order-3"]}>
+                        <p style={{marginTop: 0, marginBottom: 0}} className={styles["text-container_order-3"] + ' ' + styles['margin40']}>
                             {t("for_companies_page_text_top_4")}
                         </p>
-                        <p style={{marginTop: 0, marginLeft: 50}} className={styles["text-container_order-3"]}>
+                        <p style={{marginTop: 0}} className={styles["text-container_order-3"] + ' ' + styles['margin50']}>
                             {t("for_companies_page_text_top_5")}
                         </p>
                         <div className={styles["flex"] + ' ' + styles["button-container"] + ' ' + styles["text-container_order-5"]}>
