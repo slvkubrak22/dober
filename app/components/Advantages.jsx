@@ -136,7 +136,8 @@ export default function Advantages() {
   ];
 
   return (
-    <section style={{marginTop: 100, overflow: 'hidden', overflowX: 'scroll'}} className="container">
+    <section style={{marginTop: 100}} className="container">
+      <div className={styles["scroll"]}>
         <div className={styles["advantages"]}>
             <div>
               <h2 style={{marginTop: 0}}>{t("main_page_advantages_title")}</h2>
@@ -169,7 +170,7 @@ export default function Advantages() {
             />
             )}
         </div>
-
+      </div>
     </section>
   );
 }

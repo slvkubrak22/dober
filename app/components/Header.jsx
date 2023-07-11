@@ -38,7 +38,6 @@ export default function Header() {
         }
     };
       
-
     const [scroll, setScroll] = useState();
     const handleScroll = () => {
         if (window.scrollY > 0) {
@@ -72,11 +71,15 @@ export default function Header() {
     function onNav() {
         setNav(!nav);
     }
+    function closeNav() {
+        setNav(nav);
+    }
 
     const [showProduct, setShowProduct] = useState();
     function onShowProduct() {
         setShowProduct(!showProduct);
     }
+
     const [showLang, setShowLang] = useState();
     function onShowLang() {
         setShowLang(!showLang);
@@ -102,6 +105,28 @@ export default function Header() {
         }
         return buttonColorBlack;
     }
+
+    // useEffect(() => {
+    //     const handleRouteChange = () => {
+    //         setNav(!nav);
+    //     };
+    //     router.events.on("routeChangeStart", handleRouteChange);
+    //     return () => {
+    //         router.events.off("routeChangeStart", handleRouteChange);
+    //     };
+    // }, [router.events])
+    // router.events.on('routerChangeStart', onNav)
+    // useEffect(() => {
+    //     const handleRouteChange = () => {
+    //         setNav(!nav);
+    //     };
+    
+    //     window.addEventListener('routeChangeStart', handleRouteChange);
+    
+    //     return () => {
+    //       window.removeEventListener('routeChangeStart', handleRouteChange);
+    //     };
+    //   }, []);
 
     return(
         <>
@@ -166,13 +191,13 @@ export default function Header() {
                             </Link>
                             <div className={style[`burger`]} onClick={onNav}>
                                 <span
-                                className={style['burger-line '] + ' ' + style["burger-line-top"] + ' ' + style["active"] + ' ' + (pathname === '/' || pathname === "/features" ? style["whitecolor"] : style["darkcolor"]) + ' ' + (nav ? style['darkcolor'] : '')}
+                                className={style['burger-line '] + ' ' + style["burger-line-top"] + ' ' + style["active-burger"] + ' ' + (pathname === '/' || pathname === "/features" ? style["whitecolor"] : style["darkcolor"]) + ' ' + (nav ? style['darkcolor'] : '') + ' ' + (nav ? style["active-burger_line-top"] : '')} 
                                 ></span>
                                 <span
-                                className={style['burger-line '] + ' ' + style["burger-line-mid"] + ' ' + style["active"] + ' ' + (pathname === '/' || pathname === "/features" ? style["whitecolor"] : style["darkcolor"]) + ' ' + (nav ? style['darkcolor'] : '')}
+                                className={style['burger-line '] + ' ' + style["burger-line-mid"] + ' ' + style["active-burger"] + ' ' + (pathname === '/' || pathname === "/features" ? style["whitecolor"] : style["darkcolor"]) + ' ' + (nav ? style['darkcolor'] : '')} style={{display: nav ? "none" : ""}}
                                 ></span>
                                 <span
-                                className={style['burger-line '] + ' ' + style["burger-line-bottom"] + ' ' + style["active"] + ' ' + (pathname === '/' || pathname === "/features" ? style["whitecolor"] : style["darkcolor"]) + ' ' + (nav ? style['darkcolor'] : '')}
+                                className={style['burger-line '] + ' ' + style["burger-line-bottom"] + ' ' + style["active-burger"] + ' ' + (pathname === '/' || pathname === "/features" ? style["whitecolor"] : style["darkcolor"]) + ' ' + (nav ? style['darkcolor'] : '') + ' ' + (nav ? style["active-burger_line-bottom"] : '')} 
                                 ></span>
                             </div>
                         </div>
@@ -185,21 +210,21 @@ export default function Header() {
                                 </div>
                                 <Image className={style["menu-arrow"]} src={arrow_black} alt="menu arrow" style={{rotate: showProduct ? '180deg' : ''}}/>
                                 <div className={style["drop-menu-products"] + ' ' + style["drop-menu_wrapper"]} style={{display: showProduct ? 'flex' : 'none'}}>
-                                    <Link href='/features'>
-                                        <p>{t('features')}</p>
+                                    <Link href='/features' onClick={onNav}>
+                                        <p style={{fontSize: 20}}>{t('features')}</p>
                                     </Link>
-                                    <Link href='/security'>
-                                        <p style={{marginBottom: 0}}>{t('security')}</p>
+                                    <Link href='/security' onClick={onNav}>
+                                        <p style={{marginBottom: 0, fontSize: 20}}>{t('security')}</p>
                                     </Link>
                                 </div>
                             </li>
                             <li>
-                                <Link href='./for_companies' className={style["header_item"]}>{t('companies')}</Link>
+                                <Link onClick={onNav} href='./for_companies' className={style["header_item"]}>{t('companies')}</Link>
                             </li>
-                            <li><Link href='./help' className={style["header_item"]}>{t('help')}</Link></li>
+                            <li><Link onClick={onNav} href='./help' className={style["header_item"]}>{t('help')}</Link></li>
                         </ul>
                         <div className={style["header_buttons-container"]}>
-                                <Link href="./donate">
+                                <Link onClick={onNav} href="./donate">
                                     <button className={style["button-black"]} style={{margin: '0 10px'}}>{t('donate')}</button>
                                 </Link>
                             </div>
@@ -211,8 +236,8 @@ export default function Header() {
                             <div className={style["header_select-lang"] + ' ' + style["drop-menu_container"]}>
                                 <Image src={globe_black} alt="change language icon"/>
                                 <div>
-                                    <p style={{marginTop: 18}} onClick={onShowLang}>{t('language')}</p>
-                                    <Image className={style["menu-arrow"] + ' ' + style["menu-arrow-lang"]} src={arrow_black} alt="menu arrow" style={{right: -20, top: 22}}/>
+                                    <p style={{marginTop: 18, fontSize: 20}} onClick={onShowLang}>{t('language')}</p>
+                                    <Image className={style["menu-arrow"] + ' ' + style["menu-arrow-lang"]} src={arrow_black} alt="menu arrow" style={{right: -20, top: 22, rotate: showLang ? '180deg' : ''}} />
                                 </div>
                             </div>
                             
