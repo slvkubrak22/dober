@@ -37,7 +37,7 @@ export default function Download() {
                         <p className={styles["download_items_title"]}>Mobile app</p>
                         <div className={styles["item"]}>
                             <div className={styles["item_image-container"]}>
-                                <Image style={{width: '50%', height: '100%'}} src={new1}></Image>
+                                <Image alt='mobile app' style={{width: '50%', height: '100%'}} src={new1}></Image>
                             </div>
                             <p>{t("download_page_item_1")}</p>
                             <Link target="_blank" href='https://apps.apple.com/in/app/dober-%20public/id1658387713'>
@@ -48,7 +48,7 @@ export default function Download() {
                                         </div>
                                         <p>App Store</p>
                                     </div>
-                                    <Image className={styles["arrow"]} src={arrow}></Image>
+                                    <Image alt='arrow' className={styles["arrow"]} src={arrow}></Image>
                                 </div>
                             </Link>
                             <Link target="_blank" href='https://play.google.com/store/apps/details?id=me.dober'>
@@ -59,7 +59,7 @@ export default function Download() {
                                         </div>
                                         <p>Google Play</p>
                                     </div>
-                                    <Image className={styles["arrow"]} src={arrow}></Image>
+                                    <Image alt='arrow' className={styles["arrow"]} src={arrow}></Image>
                                 </div>
                             </Link>
                         </div>
@@ -100,7 +100,7 @@ export default function Download() {
                                         </div>
                                         <p>App Store</p>
                                     </div>
-                                    <Image className={styles["arrow"]} src={arrow}></Image>
+                                    <Image alt='arrow' className={styles["arrow"]} src={arrow}></Image>
                                 </div>
                             </Link>
                             <Link target="_blank" href='https://play.google.com/store/apps/details?id=chat.dober&pli=1'>
@@ -111,7 +111,7 @@ export default function Download() {
                                         </div>
                                         <p>Google Play</p>
                                     </div>
-                                    <Image className={styles["arrow"]} src={arrow}></Image>
+                                    <Image alt='arrow' className={styles["arrow"]} src={arrow}></Image>
                                 </div>
                             </Link>
                         </div>

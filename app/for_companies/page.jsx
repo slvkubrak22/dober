@@ -96,7 +96,7 @@ export default function ForCompanies() {
                         </div>
                         <div className={styles["shield-container_grid_item-middle"]}>
                             <div className="image-container">
-                                <Image src={shield}/>
+                                <Image alt='shield' src={shield}/>
                             </div>
                             <Link href="/security">
                                 <button className={styles["button"]}>{t("button_learn_more")}</button>

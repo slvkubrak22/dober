@@ -138,7 +138,7 @@ export default function Advantages() {
   return (
     <section style={{marginTop: 100}} className="container">
       <div className={styles["scroll"]}>
-        <div className={styles["advantages"]}>
+        <div className={styles["advantages"]} id="advantages">
             <div>
               <h2 style={{marginTop: 0}}>{t("main_page_advantages_title")}</h2>
             </div>

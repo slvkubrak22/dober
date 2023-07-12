@@ -106,7 +106,7 @@ export default function TabsComponent({ t, styles })  {
                 <p>{tab.title}</p> 
                 <div className={styles['tab-arrow-container'] + ' ' + (!tabStates[key] ? styles['active_arrow_tab_adapt'] : '')}>
                   <svg className={styles['tab-arrow']} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.07992 15.0898L10.5999 8.56984C11.3699 7.79984 12.6299 7.79984 13.3999 8.56984L19.9199 15.0898" stroke={tabStates[key] ? "white" : '#04022A'} stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.07992 15.0898L10.5999 8.56984C11.3699 7.79984 12.6299 7.79984 13.3999 8.56984L19.9199 15.0898" stroke={tabStates[key] ? "white" : '#04022A'} strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
               </div>

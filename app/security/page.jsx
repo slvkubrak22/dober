@@ -124,10 +124,10 @@ export default function Security() {
                 </h2>
                 <div className={styles["control-container"]}>
                     <div className={styles["image-container"]}>
-                        <Image src={control_1} onClick={() => handleImageClick(control_1)}/>
+                        <Image src={control_1} onClick={() => handleImageClick(control_1)} alt='control image' />
                     </div>
                     <div className={styles["image-container"]}>
-                        <Image src={control_2} onClick={() => handleImageClick(control_2)}/>
+                        <Image src={control_2} onClick={() => handleImageClick(control_2)} alt='control image' />
                     </div>
                 </div>
                 {isModalOpen && (

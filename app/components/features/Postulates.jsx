@@ -9,7 +9,7 @@ import img5 from "../../assets/img/features-page/image.svg"
 function GridItem({styles, img, title, text}) {
     return(
         <div className={styles["grid_item"]}>
-            <Image width={80} height={80} src={img}/>
+            <Image width={80} height={80} src={img} alt="postulates image"/>
             <p style={{fontWeight: 600, fontSize: 20}}>{title}</p>
             <p>{text}</p>
         </div>
@@ -77,7 +77,7 @@ export default function Postulates({t, styles}) {
                     <div className="">
                         <Image className={styles["image2"]} src={principles_img2}/>
                     </div>                     */}
-                    <Image style={{width: "100%", height: "105%"}} src={img5}/>
+                    <Image style={{width: "100%", height: "105%"}} src={img5} alt="postulates image" />
                 </div>
             </div>
         </section>

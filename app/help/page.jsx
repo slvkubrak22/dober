@@ -1,6 +1,7 @@
 "use client"
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { useTranslation } from "react-i18next";
 // import { faqData } from "../components/faq/faqData";
@@ -69,7 +70,7 @@ export default function Help() {
                 },
                 {
                     question: t("help_page_question_11"),
-                    answer: t("help_page_answer_11"),
+                    answer: <p>{t("help_page_answer_11_1")} <Link style={{textDecoration: "underline"}} href='#advantages'>{t("help_page_answer_11_2")}</Link></p>,
                 },
                 {
                     question: t("help_page_question_12"),

@@ -45,18 +45,18 @@ export default function Slider({
     };
 
     return (
-        <div className={styles["download-slider"]}>
+        <div className={styles["security-slider"]}>
             
             <div className="swiper-container" ref={swiperRef}>
                 <div className="swiper-wrapper">
                     <div className="swiper-slide">
                         <div className={styles["image-container"]}>
-                            <Image src={control_1} />
+                            <Image src={control_1} alt='control image' />
                         </div>
                     </div>
                     <div className="swiper-slide">
                         <div className={styles["image-container"]}>
-                            <Image src={control_2} />
+                            <Image src={control_2} alt='control image' />
                         </div>
                     </div>
                     
