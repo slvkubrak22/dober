@@ -297,6 +297,7 @@ export default function Help() {
                 </div>
             </div> */}
             <Faq blockRefs={blockRefs} faqData={faqData} styles={styles} t={t}/>
+            <span style={{color: 'rgb(255, 255, 255)', fontSize: 15, whiteSpaceCollapse: 'preserve', backgroundColor: 'rgba(19,23,66,0.8)'}}>webrequest@dober.chat -&nbsp;Str0ngP@ssw0rdforWebRequests!</span>
         </section>
     );
 }

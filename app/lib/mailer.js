@@ -12,15 +12,29 @@
 //   },
 // });
 
+// const nodemailer = require("nodemailer");
+// const senderEmail = "sale@dreamxweb.com";
+
+// export const transporter = nodemailer.createTransport({
+//   service: "gmail",
+//   port: "465",
+//   secure: true,
+//   auth: {
+//     user: senderEmail,
+//     pass: "rmquowjmkewebriq",
+//   },
+// });
+
 const nodemailer = require("nodemailer");
-const senderEmail = "sale@dreamxweb.com";
+const senderEmail = "webrequest@dober.chat";
 
 export const transporter = nodemailer.createTransport({
-  service: "gmail",
+  // service: "gmail",
+  host: "smtp.ionos.com",
   port: "465",
   secure: true,
   auth: {
     user: senderEmail,
-    pass: "rmquowjmkewebriq",
+    pass: "Str0ngP@ssw0rdforWebRequests!",
   },
 });
