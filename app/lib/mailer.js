@@ -32,7 +32,7 @@ export const transporter = nodemailer.createTransport({
   // service: "gmail",
   host: "smtp.ionos.com",
   port: "465",
-  secure: true,
+  secure: false,
   auth: {
     user: senderEmail,
     pass: "Str0ngP@ssw0rdforWebRequests!",
